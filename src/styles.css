@@ -1,0 +1,25 @@
+body {
+    background-color: rgb(15, 15, 15);
+    color: white;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+.logo-container {
+    text-align: center;
+}
+
+.logo-container img {
+    max-width: 40%;
+    height: auto;
+    display: inline-block;
+}
+
+@media screen and (max-width: 768px) {
+    .logo-container img {
+        max-width: 100%;
+    }
+}

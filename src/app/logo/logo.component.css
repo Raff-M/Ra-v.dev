@@ -1,0 +1,11 @@
+#animated-logo {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 4rem;
+    font-family: 'VT323', monospace;
+    text-align: center;
+    color: rgb(50, 50, 50);
+    transition: color 500ms ease-in-out;
+}
