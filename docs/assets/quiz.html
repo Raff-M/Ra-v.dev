@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Quiz Application</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                text-align: center;
+                margin-top: 50px;
+                background-color: #2b3e5c;
+                color: white;
+            }
+
+            .question-container {
+                display: inline-block;
+                text-align: left;
+                width: 50%;
+            }
+
+            .answer {
+                padding: 10px;
+                border: 1px solid white;
+                border-radius: 5px;
+                cursor: pointer;
+                margin: 5px 0;
+                background-color: #3a506b;
+                color: #f5f5f5;
+                transition: background-color 0.3s;
+            }
+
+            .answer.correct {
+                background-color: #4caf50;
+                color: white;
+            }
+
+            .answer.incorrect {
+                background-color: #f44336;
+                color: white;
+            }
+
+            .answer:hover:not(.disabled) {
+                background-color: #4f6a8a;
+            }
+
+            .answer.disabled {
+                pointer-events: none;
+                /* Disable clickability */
+            }
+
+            #next-button {
+                margin-top: 20px;
+                padding: 15px 25px;
+                font-size: 1.2em;
+                border: none;
+                border-radius: 5px;
+                background-color: #1abc9c;
+                color: #ffffff;
+                cursor: pointer;
+                display: none;
+            }
+
+            #next-button:hover {
+                background-color: #16a085;
+            }
+
+            #counter {
+                font-size: 1.5em;
+                margin-bottom: 20px;
+            }
+
+            #peek-button {
+                position: fixed;
+                top: 20px;
+                right: 20px;
+                padding: 10px 20px;
+                font-size: 1em;
+                background-color: #f39c12;
+                color: #ffffff;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: background-color 0.3s;
+            }
+
+            #peek-button:hover {
+                background-color: #e67e22;
+            }
+
+            #raw-text {
+                display: none;
+                margin-top: 20px;
+                padding: 10px;
+                border: 1px solid white;
+                border-radius: 5px;
+                background-color: #3a506b;
+                color: white;
+                white-space: pre-wrap;
+                text-align: left;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="counter">0/0</div>
+        <div id="quiz-container" class="question-container"></div>
+        <button id="next-button" onclick="loadNextQuestion()">Next</button>
+        <button id="peek-button" onclick="togglePeek()">Peek</button>
+        <div id="raw-text"></div>
+
+        <script>
+            let questions = [];
+            let unansweredQuestions = [];
+            let incorrectQuestions = [];
+            let correctAnswers = new Set();
+            let totalQuestions = 0;
+            let lastQuestionText = ""; // Track last question's text
+            let currentRawQuestion = ""; // Store raw question for peek
+
+            // Fetch and parse the questions from the file
+            fetch('questions.txt')
+                .then(response => response.text())
+                .then(data => {
+                    questions = parseQuestions(data);
+                    unansweredQuestions = [...questions];
+                    totalQuestions = questions.length;
+                    updateCounter();
+                    loadNextQuestion();
+                })
+                .catch(error => alert(`Failed to load questions: ${error.message}`));
+
+            // Function to escape HTML so that tags like <ng-content> show up as text
+            function escapeHTML(str) {
+                return str.replace(/&/g, '&amp;')
+                    .replace(/</g, '&lt;')
+                    .replace(/>/g, '&gt;')
+                    .replace(/"/g, '&quot;')
+                    .replace(/'/g, '&#39;');
+            }
+
+            function parseQuestions(data) {
+                return data
+                    .trim()
+                    .split(/Q\d+:/) // Split on 'Q[number]:'
+                    .slice(1)
+                    .map(block => {
+                        const lines = block.trim().split("\n");
+                        const questionText = lines[0].trim();
+                        const options = lines.slice(1, 5).map(line => line.replace(/^\d+\.\s*/, '').trim());
+                        const answerMatch = lines[5].match(/^Answer:\s*(\d+)/);
+                        if (!answerMatch) throw new Error("Invalid answer format");
+                        const correctIndex = parseInt(answerMatch[1], 10) - 1;
+                        return { questionText, options, correctIndex, raw: `Q${block.trim()}` };
+                    });
+            }
+
+            function loadNextQuestion() {
+                if (unansweredQuestions.length === 0 && incorrectQuestions.length === 0) {
+                    document.getElementById('quiz-container').innerHTML = "<h1>Congratulations!</h1>";
+                    document.getElementById('next-button').style.display = "none";
+                    document.getElementById('peek-button').style.display = "none";
+                    document.getElementById('raw-text').style.display = "none";
+                    return;
+                }
+
+                let currentQuestion;
+                const randomChance = Math.random();
+
+                if (incorrectQuestions.length > 0 && randomChance < 0.7) {
+                    // 70% chance to pick from the incorrect pool
+                    let randomIndex;
+                    do {
+                        randomIndex = Math.floor(Math.random() * incorrectQuestions.length);
+                        currentQuestion = incorrectQuestions[randomIndex];
+                    } while (currentQuestion.questionText === lastQuestionText && incorrectQuestions.length > 1);
+                    incorrectQuestions.splice(randomIndex, 1); // Remove from incorrect pool
+                } else {
+                    // Pick from the unanswered pool
+                    let randomIndex;
+                    do {
+                        randomIndex = Math.floor(Math.random() * unansweredQuestions.length);
+                        currentQuestion = unansweredQuestions[randomIndex];
+                    } while (currentQuestion.questionText === lastQuestionText && unansweredQuestions.length > 1);
+                }
+
+                lastQuestionText = currentQuestion.questionText; // Update last question's text
+                displayQuestion(currentQuestion);
+            }
+
+            function displayQuestion(question) {
+                const quizContainer = document.getElementById('quiz-container');
+                const nextButton = document.getElementById('next-button');
+                const rawText = document.getElementById('raw-text');
+                currentRawQuestion = question.raw; // Store the raw question for peek
+                rawText.style.display = "none"; // Hide raw text on new question
+                nextButton.style.display = "none";
+
+                // Use escapeHTML to ensure literal HTML (like <ng-content>) is shown as text
+                quizContainer.innerHTML = `<h2>${escapeHTML(question.questionText)}</h2>`;
+                const shuffledOptions = question.options
+                    .map((option, index) => ({ option, originalIndex: index }))
+                    .sort(() => Math.random() - 0.5); // Shuffle options randomly
+
+                shuffledOptions.forEach(({ option, originalIndex }) => {
+                    const answerDiv = document.createElement('div');
+                    answerDiv.textContent = option;
+                    answerDiv.className = 'answer';
+                    answerDiv.onclick = () => handleAnswerClick(originalIndex, question.correctIndex, question, shuffledOptions);
+                    quizContainer.appendChild(answerDiv);
+                });
+            }
+
+            function handleAnswerClick(selectedOriginalIndex, correctIndex, question, shuffledOptions) {
+                const quizContainer = document.getElementById('quiz-container');
+                const answers = Array.from(quizContainer.getElementsByClassName('answer'));
+
+                answers.forEach((answer, index) => {
+                    const { originalIndex } = shuffledOptions[index];
+                    answer.className = 'answer disabled ' +
+                        (originalIndex === correctIndex ? 'correct' :
+                            originalIndex === selectedOriginalIndex ? 'incorrect' : '');
+                    answer.onclick = null; // Disable further clicks
+                });
+
+                // Show the raw text automatically after an answer is clicked
+                const rawText = document.getElementById('raw-text');
+                rawText.style.display = "block";
+                rawText.textContent = currentRawQuestion;
+
+                // Always remove the question from the unanswered pool once answered
+                unansweredQuestions = unansweredQuestions.filter(q => q.questionText !== question.questionText);
+
+                if (selectedOriginalIndex === correctIndex) {
+                    correctAnswers.add(question.questionText);
+                } else {
+                    // Avoid duplicate entries in the incorrect pool
+                    if (!incorrectQuestions.some(q => q.questionText === question.questionText)) {
+                        incorrectQuestions.push(question);
+                    }
+                }
+
+                updateCounter();
+                document.getElementById('next-button').style.display = "block";
+            }
+
+            function updateCounter() {
+                const counter = document.getElementById('counter');
+                counter.textContent = `${correctAnswers.size}/${totalQuestions}`;
+            }
+
+            function togglePeek() {
+                const rawText = document.getElementById('raw-text');
+                rawText.style.display = rawText.style.display === "none" ? "block" : "none";
+                if (rawText.style.display === "block") {
+                    rawText.textContent = currentRawQuestion;
+                }
+            }
+        </script>
+    </body>
+
+</html>
