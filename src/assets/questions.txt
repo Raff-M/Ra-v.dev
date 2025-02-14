@@ -1,0 +1,3247 @@
+Q1: What is Angular primarily used for?
+1. Building server-side applications
+2. Creating desktop applications
+3. Designing graphics
+4. Building single-page web applications
+Answer: 4. Building single-page web applications
+
+Q2: Which file serves as the entry point for an Angular application?
+1. app.component.ts
+2. app.module.ts
+3. main.ts
+4. index.html
+Answer: 3. main.ts
+
+Q3: What command is used to create a new Angular project?
+1. ng new
+2. ng create
+3. ng init
+4. ng generate
+Answer: 1. ng new
+
+Q4: Which of the following is the root module of an Angular application?
+1. AppModule
+2. MainModule
+3. RootModule
+4. IndexModule
+Answer: 1. AppModule
+
+Q5: How do you start the development server in Angular?
+1. ng serve
+2. ng start
+3. ng run
+4. ng build
+Answer: 1. ng serve
+
+Q6: What does the @Component decorator define in Angular?
+1. A service
+2. A module
+3. A component
+4. A directive
+Answer: 3. A component
+
+Q7: Which of the following is used to define the template for a component?
+1. @Module
+2. @Directive
+3. templateUrl
+4. templateComponent
+Answer: 3. templateUrl
+
+Q8: What is the purpose of angular.json in an Angular project?
+1. To manage application styles
+2. To configure the build and project settings
+3. To declare components
+4. To define TypeScript configurations
+Answer: 2. To configure the build and project settings
+
+Q9: Which lifecycle hook is called after the component’s view has been fully initialized?
+1. ngOnChanges
+2. ngOnInit
+3. ngAfterViewInit
+4. ngDoCheck
+Answer: 3. ngAfterViewInit
+
+Q10: Which command adds a new component to an Angular project?
+1. ng create component
+2. ng generate component
+3. ng add component
+4. ng make component
+Answer: 2. ng generate component
+
+Q11: How do you bind data from a component to its template?
+1. Using #binding
+2. Using (data)
+3. Using {{ }}
+4. Using *data
+Answer: 3. Using {{ }}
+
+Q12: What Angular feature is used to repeat elements in the DOM?
+1. *ngFor
+2. *ngIf
+3. *ngRepeat
+4. *ngSwitch
+Answer: 1. *ngFor
+
+Q13: Which command is used to build the application for production?
+1. ng serve --prod
+2. ng deploy
+3. ng build --prod
+4. ng generate prod
+Answer: 3. ng build --prod
+
+Q14: What is the purpose of TypeScript in Angular?
+1. To enable server-side scripting
+2. To provide static typing and enhanced JavaScript features
+3. To replace JavaScript entirely
+4. To manage routing in Angular
+Answer: 2. To provide static typing and enhanced JavaScript features
+
+Q15: What is the purpose of the styles array in @Component?
+1. To define global styles for the application
+2. To include CSS specific to the component
+3. To set inline styles
+4. To apply external libraries
+Answer: 2. To include CSS specific to the component
+
+Q16: What Angular CLI command adds routing support to a new project?
+1. ng new  --routing
+2. ng add routing
+3. ng generate routing
+4. ng enable routing
+Answer: 1. ng new  --routing
+
+Q17: What is the purpose of *ngIf in a template?
+1. To bind styles conditionally
+2. To add an element to the DOM conditionally
+3. To loop over an array
+4. To bind classes dynamically
+Answer: 2. To add an element to the DOM conditionally
+
+Q18: Which Angular feature is responsible for navigation between pages?
+1. Services
+2. Routing
+3. Directives
+4. Components
+Answer: 2. Routing
+
+Q19: What is the default port for the Angular development server?
+1. 4200
+2. 3000
+3. 8080
+4. 8000
+Answer: 1. 4200
+
+Q20: What does the selector property in @Component define?
+1. The module name
+2. The component's HTML tag
+3. The service's name
+4. The application entry point
+Answer: 2. The component's HTML tag
+
+Q21: How do you add global styles to an Angular project?
+1. In styles.css or styles.scss
+2. In the index.html
+3. By adding them to main.ts
+4. By including them in app.module.ts
+Answer: 1. In styles.css or styles.scss
+
+Q22: What does the src/environments folder in Angular contain?
+1. Template files
+2. Environment-specific configurations
+3. Global service files
+4. Routing configurations
+Answer: 2. Environment-specific configurations
+
+Q23: What is tree-shaking in Angular?
+1. A method to reduce the size of an image
+2. A process to remove unused code during the build process
+3. A way to optimize data binding
+4. A debugging tool for Angular applications
+Answer: 2. A process to remove unused code during the build process
+
+Q24: Which file is used to define application-wide configurations like base paths?
+1. angular.json
+2. app.module.ts
+3. main.ts
+4. index.html
+Answer: 1. angular.json
+
+Q25: What is the primary advantage of using Angular CLI?
+1. It replaces the need for JavaScript.
+2. It simplifies the creation, building, and deployment of Angular projects.
+3. It eliminates the use of HTML.
+4. It automatically writes application code.
+Answer: 2. It simplifies the creation, building, and deployment of Angular projects.
+
+Q26: How do you declare a new module in Angular?
+1. Use the @Component decorator.
+2. Use the @NgModule decorator.
+3. Use the @Module decorator.
+4. Use the module.ts file.
+Answer: 2. Use the @NgModule decorator.
+
+Q27: Which directive is used to conditionally apply classes in Angular?
+1. *ngIf
+2. *ngFor
+3. [ngClass]
+4. [ngStyle]
+Answer: 3. [ngClass]
+
+Q28: What Angular feature allows you to share data between components?
+1. Dependency Injection
+2. Directives
+3. Two-way binding
+4. Services
+Answer: 4. Services
+
+Q29: Which lifecycle hook is used to perform initialization tasks in a component?
+1. ngOnChanges
+2. ngDoCheck
+3. ngOnInit
+4. ngAfterViewChecked
+Answer: 3. ngOnInit
+
+Q30: What is the default data binding syntax in Angular templates?
+1. (event)="expression"
+2. [property]="expression"
+3. {{ expression }}
+4. [(ngModel)]="expression"
+Answer: 3. {{ expression }}
+
+Q1: What decorator is used to define a component in Angular?
+1. @Module
+2. @Directive
+3. @Component
+4. @Injectable
+Answer: 3. @Component
+
+Q2: How does a parent component pass data to a child component?
+1. Using @Output
+2. Using @Input
+3. Using @ViewChild
+4. Using @ContentChild
+Answer: 2. Using @Input
+
+Q3: Which decorator is used to emit events from a child component to a parent component?
+1. @ViewChild
+2. @Input
+3. @Output
+4. @Inject
+Answer: 3. @Output
+
+Q4: How do sibling components share data in Angular?
+1. Using @Input and @Output
+2. By injecting a shared service
+3. By using @ViewChild
+4. By creating a new module
+Answer: 2. By injecting a shared service
+
+Q5: What is the purpose of the EventEmitter class in Angular?
+1. To inject services into components
+2. To emit custom events from a child component
+3. To share data between sibling components
+4. To bind data to templates
+Answer: 2. To emit custom events from a child component
+
+Q6: What syntax is used to bind an event in Angular?
+1. [event]="handler()"
+2. (event)="handler()"
+3. {{ event }}="handler()"
+4. {event}="handler()"
+Answer: 2. (event)="handler()"
+
+Q7: How do you access a child component’s method from a parent component?
+1. Using @Input
+2. Using @Output
+3. Using @ViewChild
+4. Using @ContentChild
+Answer: 3. Using @ViewChild
+
+Q8: What Angular feature allows you to reference DOM elements or child components in a template?
+1. Lifecycle hooks
+2. Template variables
+3. Structural directives
+4. Attribute directives
+Answer: 2. Template variables
+
+Q9: Which lifecycle hook is called when @Input properties change?
+1. ngOnInit
+2. ngAfterViewInit
+3. ngDoCheck
+4. ngOnChanges
+Answer: 4. ngOnChanges
+
+Q10: What is the default encapsulation mode for Angular components?
+1. Native
+2. Emulated
+3. None
+4. Global
+Answer: 2. Emulated
+
+Q11: How do you trigger change detection manually in Angular?
+1. By using ngOnChanges
+2. By calling detectChanges() on ChangeDetectorRef
+3. By modifying the template directly
+4. By subscribing to @Output
+Answer: 2. By calling detectChanges() on ChangeDetectorRef
+
+Q12: What is the purpose of ngAfterViewInit?
+1. To detect changes in @Input properties
+2. To initialize child components or DOM elements after the view is initialized
+3. To clean up resources when the component is destroyed
+4. To perform initialization tasks for the component
+Answer: 2. To initialize child components or DOM elements after the view is initialized
+
+Q13: How can you bind a CSS class dynamically in Angular?
+1. Using [class]
+2. Using [class.class-name]
+3. Using [ngClass]
+4. Using [style]
+Answer: 3. Using [ngClass]
+
+Q14: What does @ContentChild allow you to do in Angular?
+1. Access child components in the view
+2. Access projected content within a component
+3. Bind data to sibling components
+4. Inject services into the component
+Answer: 2. Access projected content within a component
+
+Q16: What is the syntax for listening to a custom event emitted by a child component?
+1. (event)="handler($event)"
+2. [event]="handler($event)"
+3. {event}="handler($event)"
+4. {{ event }}="handler($event)"
+Answer: 1. (event)="handler($event)"
+
+Q17: How do you initialize a child component in Angular?
+1. Using @ContentChild
+2. Using @Output
+3. Using @ViewChild
+4. Using @Input
+Answer: 3. Using @ViewChild
+
+Q18: What is the purpose of the selector property in @Component?
+1. To define the HTML tag for the component
+2. To specify the component’s styles
+3. To configure dependency injection
+4. To bind data to the component
+Answer: 1. To define the HTML tag for the component
+
+Q19: Which of the following is an example of a parent-to-child communication?
+1. Using @Output and EventEmitter
+2. Using a shared service
+3. Using @Input
+4. Using @ContentChild
+Answer: 3. Using @Input
+
+Q20: How can a child component notify its parent of an event?
+1. Using @Input
+2. Using a shared service
+3. Using @Output and EventEmitter
+4. Using @ViewChild
+Answer: 3. Using @Output and EventEmitter
+
+Q21: What happens if a component’s @Input value changes?
+1. The component’s view is re-rendered automatically.
+2. ngOnChanges is called if implemented.
+3. The parent component’s ngOnInit is triggered.
+4. The EventEmitter is automatically notified.
+Answer: 2. ngOnChanges is called if implemented.
+
+Q22: How can you access a template reference variable in the component class?
+1. Using @ViewChild
+2. Using @ContentChild
+3. By importing the variable directly
+4. By passing it to a child component
+Answer: 1. Using @ViewChild
+
+Q23: What is the purpose of structural directives like *ngIf?
+1. To style elements dynamically
+2. To manipulate the DOM by adding or removing elements
+3. To pass data between components
+4. To trigger lifecycle hooks
+Answer: 2. To manipulate the DOM by adding or removing elements
+
+Q24: How do you define an inline template for a component?
+1. Using the templateUrl property
+2. Using the template property
+3. Using @Template
+4. Using inline: true
+Answer: 2. Using the template property
+
+Q25: What is the correct way to stop listening to an @Output event?
+1. Unsubscribe using EventEmitter.unsubscribe()
+2. Use stopPropagation() in the event handler
+3. Remove the listener in the parent template
+4. Events cannot be unsubscribed in Angular
+Answer: 1. Unsubscribe using EventEmitter.unsubscribe()
+
+Q26: What is the purpose of ChangeDetectionStrategy.OnPush?
+1. To manually trigger change detection
+2. To optimize change detection by only checking changed inputs
+3. To disable change detection
+4. To enable template caching
+Answer: 2. To optimize change detection by only checking changed inputs
+
+Q27: Which lifecycle hook is called when a component is destroyed?
+1. ngOnDestroy
+2. ngDoCheck
+3. ngAfterViewInit
+4. ngOnChanges
+Answer: 1. ngOnDestroy
+
+Q28: How do you define a scoped style for an Angular component?
+1. Use the @style decorator
+2. Include styles in the styles array of @Component
+3. Add global styles in styles.css
+4. Use the encapsulation property in @Component
+Answer: 2. Include styles in the styles array of @Component
+
+Q29: What is the purpose of @ContentChildren in Angular?
+1. To access child components within a view
+2. To access a collection of projected content
+3. To bind a parent component’s properties
+4. To add multiple services to a component
+Answer: 2. To access a collection of projected content
+
+Q30: How do you bind an input property to a calculated value?
+1. Using (property)="value"
+2. Using [property]="calculation()"
+3. Using {property}="value"
+4. Using {{ property }}
+Answer: 2. Using `[property]="calculation()"
+
+Q2: How do you bind a property of an HTML element in Angular?
+1. (property)="value"
+2. {property}="value"
+3. [property]="value"
+4. {{ property }}="value"
+Answer: 3. [property]="value"
+
+Q3: Which syntax is used to bind an event in Angular?
+1. (event)="handler()"
+2. [event]="handler()"
+3. {{ event }}="handler()"
+4. *event="handler()"
+Answer: 1. (event)="handler()"
+
+Q4: What directive is used to conditionally render elements in Angular?
+1. *ngFor
+2. *ngIf
+3. *ngSwitch
+4. *ngStyle
+Answer: 2. *ngIf
+
+Q5: What is the purpose of the safe navigation operator (?.) in Angular?
+1. To prevent errors when accessing null or undefined properties
+2. To bind a value to an element
+3. To loop over an array
+4. To handle DOM events
+Answer: 1. To prevent errors when accessing null or undefined properties
+
+Q6: Which directive is used to iterate over an array in Angular?
+1. *ngFor
+2. *ngIf
+3. *ngSwitch
+4. *ngStyle
+Answer: 1. *ngFor
+
+Q7: How do you apply a CSS class conditionally in Angular?
+1. Using [ngClass] with an expression
+2. Using *ngStyle
+3. Using [class] directly
+4. Using (ngClass)
+Answer: 1. Using [ngClass] with an expression
+
+Q8: How do you apply inline styles dynamically in Angular?
+1. Using [ngStyle] with an expression
+2. Using *ngStyle
+3. Using [style] directly
+4. Using (ngStyle)
+Answer: 1. Using [ngStyle] with an expression
+
+Q9: What is the purpose of template reference variables in Angular?
+1. To define reusable templates
+2. To reference DOM elements or child components in the template
+3. To store component state
+4. To handle routing
+Answer: 2. To reference DOM elements or child components in the template
+
+Q10: Which directive is used to switch between multiple templates in Angular?
+1. *ngIf
+2. *ngFor
+3. *ngSwitch
+4. *ngClass
+Answer: 3. *ngSwitch
+
+Q11: How do you declare a template reference variable in Angular?
+1. Using (variable)
+2. Using [variable]
+3. Using #variable
+4. Using {{ variable }}
+Answer: 3. Using #variable
+
+Q12: Which of the following is an example of two-way binding in Angular?
+1. (ngModel)="data"
+2. [(ngModel)]="data"
+3. {{ ngModel }}="data"
+4. [ngModel]="data"
+Answer: 2. [(ngModel)]="data"
+
+Q13: What is the default behavior of Angular pipes?
+1. To transform data asynchronously
+2. To transform data synchronously
+3. To fetch data from a service
+4. To handle DOM events
+Answer: 2. To transform data synchronously
+
+Q14: What is the purpose of the currency pipe in Angular?
+1. To format numbers as percentages
+2. To format numbers as currency
+3. To convert text to uppercase
+4. To parse JSON strings
+Answer: 2. To format numbers as currency
+
+Q15: Which structural directive is used for rendering elements based on a condition?
+1. *ngSwitch
+2. *ngIf
+3. *ngFor
+4. *ngStyle
+Answer: 2. *ngIf
+
+Q16: What does [attr.class] do in Angular?
+1. Binds an element's class attribute dynamically
+2. Adds multiple classes to an element
+3. Conditionally hides an element
+4. Applies inline styles
+Answer: 1. Binds an element's class attribute dynamically
+
+Q17: Which directive is used to apply multiple classes dynamically?
+1. *ngClass
+2. [ngClass]
+3. [ngStyle]
+4. *ngIf
+Answer: 2. [ngClass]
+
+Q18: How can you pass a parameter to a pipe in Angular?
+1. {{ value | pipe:param }}
+2. {{ value : pipe:param }}
+3. {{ value | pipe=param }}
+4. {{ value * pipe:param }}
+Answer: 1. {{ value | pipe
+
+Q19: How do you handle a null value in a template using Angular syntax?
+1. Use a custom directive
+2. Use the safe navigation operator (?.)
+3. Use a conditional statement
+4. Use the *ngIf directive
+Answer: 2. Use the safe navigation operator (?.)
+
+Q20: Which pipe is used to transform text to uppercase?
+1. lowercase
+2. uppercase
+3. titlecase
+4. text-transform
+Answer: 2. uppercase
+
+Q21: How do you transform a date in Angular templates?
+1. Using the date pipe
+2. Using the formatDate pipe
+3. Using the time pipe
+4. Using the datetime pipe
+Answer: 1. Using the date pipe
+
+Q22: How do you bind a method to a button click event in Angular?
+1. (click)="method()"
+2. [click]="method()"
+3. (button)="method()"
+4. #click="method()"
+Answer: 1. (click)="method()"
+
+Q23: What is the purpose of the json pipe in Angular?
+1. To parse a JSON string
+2. To format data as a JSON string
+3. To validate JSON responses
+4. To filter JSON data
+Answer: 2. To format data as a JSON string
+
+Q24: What is the purpose of [hidden] in Angular templates?
+1. To remove an element from the DOM
+2. To hide an element using CSS
+3. To conditionally apply a directive
+4. To trigger change detection
+Answer: 2. To hide an element using CSS
+
+Q25: How do you format a number as a percentage in Angular?
+1. Using the percent pipe
+2. Using the number pipe
+3. Using the format pipe
+4. Using the currency pipe
+Answer: 1. Using the percent pipe
+
+Q26: How do you add a default case in an *ngSwitch directive?
+1. Use the default directive
+2. Add a <ng-template> with no ngSwitchCase value
+3. Use the *ngIf directive
+4. Use *ngSwitchDefault
+Answer: 4. Use *ngSwitchDefault
+
+Q27: How do you set a default value for an input in Angular?
+1. Using value="default"
+2. Using placeholder="default"
+3. Using [(ngModel)]="default"
+4. Using [value]="default"
+Answer: 1. Using value="default"
+
+Q28: How do you disable a button conditionally in Angular?
+1. [disabled]="condition"
+2. (disabled)="condition"
+3. *disabled="condition"
+4. {{ disabled }}="condition"
+Answer: 1. [disabled]="condition"
+
+Q29: What does the titlecase pipe do in Angular?
+1. Converts text to uppercase
+2. Converts text to lowercase
+3. Capitalizes the first letter of each word
+4. Formats text as a title
+Answer: 3. Capitalizes the first letter of each word
+
+Q30: Which binding syntax is used for dynamically setting attributes?
+1. {{ attribute }}
+2. [attr.attribute]="value"
+3. {attribute}="value"
+4. (attr)="value"
+Answer: 2. [attr.attribute]="value"
+
+Q1: What is the purpose of an Angular service?
+1. To manage routing between pages.
+2. To encapsulate reusable logic and share data between components.
+3. To handle lifecycle hooks.
+4. To define component templates.
+Answer: 2. To encapsulate reusable logic and share data between components.
+
+Q2: Which decorator is used to define a service in Angular?
+1. @Component
+2. @Directive
+3. @Injectable
+4. @Pipe
+Answer: 3. @Injectable
+
+Q3: How do you create a new service using Angular CLI?
+1. ng generate component
+2. ng create service
+3. ng add service
+4. ng generate service
+Answer: 4. ng generate service
+
+Q4: What does providedIn
+1. Makes the service available only to the root module.
+2. Ensures the service is a singleton and available application-wide.
+3. Restricts the service to lazy-loaded modules.
+4. Makes the service private to the component.
+Answer: 2. Ensures the service is a singleton and available application-wide.
+
+Q5: How do you inject a service into a component?
+1. By importing it directly into the component.
+2. By adding it to the imports array in AppModule.
+3. By adding it to the component’s constructor.
+4. By defining it in the component template.
+Answer: 3. By adding it to the component’s constructor.
+
+Q6: What is the purpose of the @Injectable decorator?
+1. To define a reusable directive.
+2. To allow a class to be injected as a dependency.
+3. To create a singleton component.
+4. To initialize a module.
+Answer: 2. To allow a class to be injected as a dependency.
+
+Q7: How can you scope a service to a specific module?
+1. By using providedIn: 'module' in the service.
+2. By adding it to the providers array of the module.
+3. By importing it in the component.
+4. By using @Component decorator.
+Answer: 2. By adding it to the providers array of the module.
+
+Q8: Which module must be imported to use HttpClient in a service?
+1. CommonModule
+2. FormsModule
+3. HttpClientModule
+4. ReactiveFormsModule
+Answer: 3. HttpClientModule
+
+Q9: What is the primary advantage of using services in Angular?
+1. It reduces the size of the application.
+2. It allows for dynamic template binding.
+3. It separates logic and promotes reusability.
+4. It eliminates the need for components.
+Answer: 3. It separates logic and promotes reusability.
+
+Q10: How do you make an HTTP GET request using a service in Angular?
+1. this.httpClient.fetch(url)
+2. this.http.get(url)
+3. this.httpClient.get(url)
+4. this.http.getRequest(url)
+Answer: 3. this.httpClient.get(url)
+
+Q11: Which Angular feature allows a service to be reused across the application?
+1. Singleton pattern
+2. Dependency Injection
+3. Two-way binding
+4. Lazy loading
+Answer: 2. Dependency Injection
+
+Q12: How can you test a service in Angular?
+1. Using TestBed.configureTestingModule.
+2. By mocking the service manually.
+3. By using the angular.json configuration.
+4. Services cannot be tested independently.
+Answer: 1. Using TestBed.configureTestingModule.
+
+Q13: How do you add a service to a specific component only?
+1. By adding it to the imports array.
+2. By including it in the bootstrap array.
+3. By adding it to the component’s providers array.
+4. By using providedIn: 'component'.
+Answer: 3. By adding it to the component’s providers array.
+
+Q14: What happens if you remove providedIn
+1. The service becomes unavailable.
+2. The service can only be used within its declaring module.
+3. The service will throw an error.
+4. The service becomes automatically scoped to components.
+Answer: 2. The service can only be used within its declaring module.
+
+Q15: Which method in HttpClient is used to send data to the server?
+1. get()
+2. put()
+3. post()
+4. fetch()
+Answer: 3. post()
+
+Q16: How do you pass configuration options to a service?
+1. Through the constructor of the service.
+2. By using @Input in the service.
+3. By modifying the service file directly.
+4. Through the angular.json file.
+Answer: 1. Through the constructor of the service.
+
+Q17: What is the purpose of the map operator in an HTTP request?
+1. To combine multiple requests.
+2. To transform the response data.
+3. To handle errors.
+4. To cancel the request.
+Answer: 2. To transform the response data.
+
+Q18: How do you ensure that a service is only initialized once in Angular?
+1. By adding it to the bootstrap array.
+2. By using providedIn: 'root'.
+3. By importing it multiple times in the module.
+4. By using a directive.
+Answer: 2. By using providedIn
+
+Q19: What does the catchError operator do in a service?
+1. Retries the request.
+2. Handles errors in an HTTP request.
+3. Caches the HTTP response.
+4. Converts Observables to Promises.
+Answer: 2. Handles errors in an HTTP request.
+
+Q20: Which of the following is NOT a valid HTTP method in Angular’s HttpClient?
+1. delete()
+2. post()
+3. fetch()
+4. patch()
+Answer: 3. fetch()
+
+Q21: What is the purpose of Dependency Injection tokens?
+1. To uniquely identify a dependency.
+2. To convert services into directives.
+3. To bootstrap the Angular application.
+4. To remove unused services.
+Answer: 1. To uniquely identify a dependency.
+
+Q22: How can you log HTTP requests in a service?
+1. Using an Angular interceptor.
+2. By enabling logging in the angular.json file.
+3. By modifying the HttpClient class.
+4. By using the logRequest() method.
+Answer: 1. Using an Angular interceptor.
+
+Q23: What is the purpose of the subscribe() method in a service?
+1. To bind the data to the template.
+2. To listen for changes in Observables.
+3. To automatically inject the service.
+4. To initialize a service.
+Answer: 2. To listen for changes in Observables.
+
+Q24: How do you mock an HTTP request in a service test?
+1. Using HttpClientTestingModule.
+2. By modifying the service constructor.
+3. By overriding the service in angular.json.
+4. Using a @Directive.
+Answer: 1. Using HttpClientTestingModule.
+
+Q25: What is the purpose of the finalize operator in an HTTP service?
+1. To execute logic after the request is completed.
+2. To combine multiple HTTP requests.
+3. To transform the response data.
+4. To retry failed requests.
+Answer: 1. To execute logic after the request is completed.
+
+Q26: Which of the following ensures that an Angular service is stateless?
+1. Using Dependency Injection.
+2. Avoiding local state in the service.
+3. Using providedIn: 'root'.
+4. Avoiding HTTP requests in the service.
+Answer: 2. Avoiding local state in the service.
+
+Q27: How do you cancel an HTTP request in Angular?
+1. Using the unsubscribe() method on the subscription.
+2. By calling cancelRequest() on HttpClient.
+3. By setting the HTTP method to null.
+4. Using a custom directive.
+Answer: 1. Using the unsubscribe() method on the subscription.
+
+Q28: What is the recommended way to share data between unrelated components?
+1. Using a shared service.
+2. Using @Input and @Output.
+3. Using a template reference variable.
+4. By creating a new module.
+Answer: 1. Using a shared service.
+
+Q29: How do you inject a service into another service?
+1. Using @ViewChild.
+2. By adding it to the imports array.
+3. By including it in the constructor.
+4. By using @Output.
+Answer: 3. By including it in the constructor.
+
+Q30: What is the purpose of the forRoot() method in Angular modules?
+1. To configure services with application-wide settings.
+2. To define component templates.
+3. To initialize lazy-loaded modules.
+4. To create reusable directives.
+Answer: 1. To configure services with application-wide settings.
+
+Q1: Which module is required to enable routing in Angular?
+1. FormsModule
+2. ReactiveFormsModule
+3. RouterModule
+4. HttpClientModule
+Answer: 3. RouterModule
+
+Q2: How do you define routes in Angular?
+1. Using an array of objects
+2. Using a JSON configuration file
+3. By adding them to angular.json
+4. By creating a directive
+Answer: 1. Using an array of objects
+
+Q3: What is the purpose of <router-outlet> in Angular?
+1. To define a new route
+2. To display routed components
+3. To preload all routes
+4. To fetch route parameters
+Answer: 2. To display routed components
+
+Q4: How do you create a route to a specific component?
+1. { path: 'route', component: ComponentName }
+2. { path: 'route', module: ModuleName }
+3. { route: 'path', load: ComponentName }
+4. { route: 'path', view: ViewName }
+Answer: 1. { path
+
+Q5: What does [routerLink] do in Angular?
+1. Creates a new route dynamically
+2. Navigates to a specified route
+3. Defines a service for routing
+4. Loads all modules asynchronously
+Answer: 2. Navigates to a specified route
+
+Q6: How do you pass parameters to a route in Angular?
+1. { path: 'route/:id', component: ComponentName }
+2. { path: 'route', params: { id: 'value' } }
+3. { route: 'path', query: '?id=value' }
+4. { path: 'route', data: { id: 'value' } }
+Answer: 1. { path
+
+Q7: How can you retrieve route parameters in a component?
+1. Using RouterLink
+2. Using ActivatedRoute
+3. Using RouterModule
+4. Using RouteGuard
+Answer: 2. Using ActivatedRoute
+
+Q8: What is the purpose of a wildcard route in Angular?
+1. To preload all routes
+2. To redirect to a specific component for undefined routes
+3. To dynamically create routes
+4. To guard routes from unauthorized access
+Answer: 2. To redirect to a specific component for undefined routes
+
+Q9: Which guard is used to check whether a user can leave a route?
+1. CanActivate
+2. CanLoad
+3. CanDeactivate
+4. Resolve
+Answer: 3. CanDeactivate
+
+Q10: How do you enable lazy loading for a module?
+1. { path: 'module', component: ModuleName }
+2. { path: 'module', loadChildren: () => import('./module/module.module').then(m => m.ModuleName) }
+3. { path: 'module', children: ModuleName }
+4. { route: 'module', load: ModuleName }
+Answer: 2. { path
+
+Q11: How do you redirect a route in Angular?
+1. { path: 'old-path', redirect: 'new-path' }
+2. { path: 'old-path', redirectTo: 'new-path', pathMatch: 'full' }
+3. { route: 'old-path', target: 'new-path' }
+4. { path: 'old-path', navigateTo: 'new-path' }
+Answer: 2. { path
+
+Q12: What is PreloadAllModules used for?
+1. To preload all lazy-loaded modules after the application loads
+2. To preload specific components on demand
+3. To prevent modules from loading dynamically
+4. To load only the root module
+Answer: 1. To preload all lazy-loaded modules after the application loads
+
+Q13: How do you pass query parameters to a route programmatically?
+1. this.router.navigate(['path'], { queryParams: { key: 'value' } })
+2. this.router.navigate(['path'], { params: { key: 'value' } })
+3. this.router.route(['path'], { query: { key: 'value' } })
+4. this.router.link(['path'], { params: { key: 'value' } })
+Answer: 1. this.router.navigate(['path'], { queryParams
+
+Q14: What is the purpose of CanActivate in Angular routing?
+1. To guard a route by checking specific conditions
+2. To preload a route's data
+3. To redirect a route to another module
+4. To define query parameters
+Answer: 1. To guard a route by checking specific conditions
+
+Q15: How do you define child routes in Angular?
+1. Using children property in the route definition
+2. Using path property in the child component
+3. By nesting the component inside the parent component
+4. Using the @ChildRoute decorator
+Answer: 1. Using children property in the route definition
+
+Q16: What is the purpose of RouterLinkActive?
+1. To preload routes dynamically
+2. To add a class to an active route link
+3. To guard routes from unauthorized access
+4. To redirect routes based on conditions
+Answer: 2. To add a class to an active route link
+
+Q17: How do you handle 404 errors in Angular routing?
+1. Use a wildcard route (**) to redirect to a 404 component
+2. Use CanActivate to guard the 404 route
+3. Add a default case in RouterModule
+4. Enable lazy loading for the 404 module
+Answer: 1. Use a wildcard route (**) to redirect to a 404 component
+
+Q18: What method is used to navigate programmatically in Angular?
+1. Router.navigate()
+2. RouterLink.navigate()
+3. ActivatedRoute.navigate()
+4. RouteService.navigate()
+Answer: 1. Router.navigate()
+
+Q19: Which property defines the matching strategy for a route?
+1. pathMatch
+2. routeMatch
+3. matchType
+4. exactMatch
+Answer: 1. pathMatch
+
+Q20: How do you define a default route in Angular?
+1. { path: '', redirectTo: 'default', pathMatch: 'full' }
+2. { path: '', loadChildren: 'default' }
+3. { route: '', component: DefaultComponent }
+4. { path: '', redirect: 'default' }
+Answer: 1. { path
+
+Q21: How do you retrieve query parameters in a component?
+1. Using Router
+2. Using ActivatedRoute.queryParams
+3. Using RouterLink
+4. Using RouteGuard
+Answer: 2. Using ActivatedRoute.queryParams
+
+Q22: What is the purpose of the Resolve guard?
+1. To prevent unauthorized access
+2. To preload data before activating a route
+3. To handle undefined routes
+4. To dynamically create routes
+Answer: 2. To preload data before activating a route
+
+Q23: Which lifecycle hook is used to subscribe to route parameters in a component?
+1. ngOnInit
+2. ngDoCheck
+3. ngAfterViewInit
+4. ngOnDestroy
+Answer: 1. ngOnInit
+
+Q24: What does RouterModule.forRoot() do?
+1. Configures the root module for routing
+2. Initializes routing for lazy-loaded modules
+3. Defines child routes for components
+4. Enables route guards for the application
+Answer: 1. Configures the root module for routing
+
+Q25: How do you access the current route path in a component?
+1. Using ActivatedRoute.snapshot.url
+2. Using Router.currentRoute
+3. Using RouterLink
+4. Using RouteGuard
+Answer: 1. Using ActivatedRoute.snapshot.url
+
+Q26: Which directive is used to disable links for inactive routes?
+1. [disableRouterLink]
+2. [routerLinkActiveOptions]
+3. [inactiveRouterLink]
+4. [disableInactiveLink]
+Answer: 2. [routerLinkActiveOptions]
+
+Q27: What is the purpose of pathMatch
+1. Ensures that the entire path is matched exactly
+2. Prevents lazy loading of routes
+3. Redirects to a default component
+4. Disables route guards for the current route
+Answer: 1. Ensures that the entire path is matched exactly
+
+Q28: How do you define a route with optional parameters?
+1. { path: 'route/:id?' }
+2. { path: 'route/:id', optional: true }
+3. { path: 'route', queryParams: 'id' }
+4. { path: 'route', params: '?id' }
+Answer: 1. { path
+
+Q29: How can you dynamically load a module based on the route?
+1. Using loadChildren in the route definition
+2. Using loadModule in the component
+3. By importing the module in AppModule
+4. By enabling lazy loading globally
+Answer: 1. Using loadChildren in the route definitione
+
+Q30: How do you add animations during route transitions?
+1. By using the @angular/animations module and defining animations in the component decorator.
+2. By adding animations in the RouterModule configuration.
+3. By importing BrowserAnimationsModule and defining route animations in the trigger and transition methods.
+4. By directly applying CSS animations to route components.
+Answer: 3. By importing BrowserAnimationsModule and defining route animations in the trigger and transition methods.
+
+Q1: What are the two types of forms in Angular?
+1. Static and Dynamic Forms
+2. Template-Driven and Reactive Forms
+3. Model-Driven and Template-Driven Forms
+4. FormBuilder and Dynamic Forms
+Answer: 2. Template-Driven and Reactive Forms
+
+Q2: Which directive is used for two-way data binding in template-driven forms?
+1. [ngModel]
+2. [(ngModel)]
+3. (ngModel)
+4. {{ ngModel }}
+Answer: 2. [(ngModel)]
+
+Q3: How do you define a reactive form in Angular?
+1. By using FormBuilder
+2. By using ReactiveFormsModule
+3. By using FormControl, FormGroup, and FormArray
+4. All of the above
+Answer: 4. All of the above
+
+Q4: What is the purpose of FormGroup in reactive forms?
+1. To bind data to individual form controls.
+2. To group multiple form controls together.
+3. To apply custom validators to the form.
+4. To display error messages dynamically.
+Answer: 2. To group multiple form controls together.
+
+Q5: Which module is required to use template-driven forms in Angular?
+1. FormsModule
+2. ReactiveFormsModule
+3. CommonModule
+4. HttpClientModule
+Answer: 1. FormsModule
+
+Q6: How do you validate a field in a template-driven form?
+1. By using Validators in the component.
+2. By adding built-in directives like required, minLength, etc., in the template.
+3. By using FormControl in the component.
+4. By using ngFor in the template.
+Answer: 2. By adding built-in directives like required, minLength, etc., in the template.
+
+Q7: What is the purpose of the FormBuilder service in Angular?
+1. To fetch data from the server.
+2. To simplify the creation of reactive forms.
+3. To apply styles to form controls.
+4. To create custom validators.
+Answer: 2. To simplify the creation of reactive forms.
+
+Q8: What does the pristine state indicate for a form control?
+1. The control has been modified.
+2. The control has not been modified.
+3. The control is valid.
+4. The control is invalid.
+Answer: 2. The control has not been modified.
+
+Q9: How do you display error messages conditionally in a form?
+1. Using the ngFor directive.
+2. Using the ngClass directive.
+3. Using the ngIf directive.
+4. Using the ngModel directive.
+Answer: 3. Using the ngIf directive.
+
+Q10: Which validator ensures a field is not left empty?
+1. pattern
+2. required
+3. minLength
+4. maxLength
+Answer: 2. required
+
+Q11: How do you dynamically add controls to a form group in reactive forms?
+1. By using FormGroup.addControl()
+2. By using FormControl.add()
+3. By modifying the template directly.
+4. By using FormBuilder.addControl()
+Answer: 1. By using FormGroup.addControl()
+
+Q12: What is the purpose of Validators.pattern?
+1. To enforce a minimum value.
+2. To ensure a specific regex pattern is matched.
+3. To check the length of input.
+4. To ensure a field is not empty.
+Answer: 2. To ensure a specific regex pattern is matched.
+
+Q13: How do you enable asynchronous validation in a reactive form?
+1. By using the asyncValidator directive.
+2. By creating a validator function that returns an Observable or Promise.
+3. By adding async: true to the form control.
+4. By using AsyncValidators in the template.
+Answer: 2. By creating a validator function that returns an Observable or Promise.
+
+Q14: What is the default behavior of a form control with the touched state?
+1. The control has been focused and blurred.
+2. The control has been modified.
+3. The control is valid.
+4. The control is invalid.
+Answer: 1. The control has been focused and blurred.
+
+Q15: How do you bind data to a form control in a reactive form?
+1. By using formGroup.
+2. By using formControlName.
+3. By using ngModel.
+4. By using ngIf.
+Answer: 2. By using formControlName.
+
+Q16: How can you create a custom validator in Angular?
+1. By using a directive in the template.
+2. By implementing a function that returns a validation error object or null.
+3. By modifying the form directly in the template.
+4. By using the ngClass directive.
+Answer: 2. By implementing a function that returns a validation error object or null.
+
+Q17: How do you check if a form is valid in the template?
+1. Using formGroup.invalid
+2. Using formGroup.errors
+3. Using formGroup.valid
+4. Using formGroup.touched
+Answer: 3. Using formGroup.valid
+
+Q18: Which directive is used to submit a form in Angular?
+1. (submit)="onSubmit()"
+2. (ngSubmit)="onSubmit()"
+3. (formSubmit)="onSubmit()"
+4. (submitForm)="onSubmit()"
+Answer: 2. (ngSubmit)="onSubmit()"
+
+Q19: How do you disable a form control dynamically?
+1. By using [disabled]="true" in the template.
+2. By calling the disable() method on the form control.
+3. By removing the form control from the form group.
+4. By adding a validator to disable the control.
+Answer: 2. By calling the disable() method on the form control.
+
+Q20: What is the purpose of FormArray in Angular?
+1. To group related form controls together.
+2. To create a list of dynamically added form controls.
+3. To manage validation for the entire form.
+4. To apply styles to form controls.
+Answer: 2. To create a list of dynamically added form controls.
+
+Q21: Which property ensures that a field is invalid when left empty?
+1. required
+2. pattern
+3. minLength
+4. maxLength
+Answer: 1. required
+
+Q22: What method is used to reset a form in Angular?
+1. form.reset()
+2. form.clear()
+3. form.reload()
+4. form.restart()
+Answer: 1. form.reset()
+
+Q23: How do you bind a reactive form to a template?
+1. Using [formControl].
+2. Using [formGroup].
+3. Using [ngModel].
+4. Using [form].
+Answer: 2. Using [formGroup].
+
+Q24: How do you access the value of a specific form control in reactive forms?
+1. formGroup.get(controlName).value
+2. formGroup.controls(controlName).value
+3. formGroup.value(controlName)
+4. formGroup.control(controlName)
+Answer: 1. formGroup.get(controlName).value
+
+Q25: Which validator ensures a field matches a specific length?
+1. required
+2. minLength
+3. pattern
+4. length
+Answer: 2. minLength
+
+Q26: How do you mark a form control as touched programmatically?
+1. control.touched = true
+2. control.markAsTouched()
+3. control.touch()
+4. control.focus()
+Answer: 2. control.markAsTouched()
+
+Q27: Which property ensures validation for email fields?
+1. Validators.email
+2. Validators.pattern('email')
+3. Validators.type('email')
+4. Validators.required
+Answer: 1. Validators.email
+
+Q28: What is the purpose of the statusChanges property in forms?
+1. To track value changes in the form.
+2. To track validation status changes in the form.
+3. To monitor DOM changes in the form.
+4. To bind the form data to the template.
+Answer: 2. To track validation status changes in the form.
+
+Q29: How do you update the value of a form control programmatically?
+1. control.setValue(newValue)
+2. control.update(newValue)
+3. control.changeValue(newValue)
+4. control.addValue(newValue)
+Answer: 1. control.setValue(newValue)
+
+Q30: What is the primary advantage of reactive forms over template-driven forms?
+1. Easier to debug and manage for complex forms.
+2. Simpler to implement for basic forms.
+3. Requires no additional module imports.
+4. Automatically handles form submission.
+Answer: 1. Easier to debug and manage for complex forms.
+
+Q1: Which decorator is used to pass data from a parent to a child component?
+1. @Output
+2. @Input
+3. @ViewChild
+4. @ContentChild
+Answer: 2. @Input
+
+Q2: How does a child component send events to a parent component?
+1. Using the @Input decorator.
+2. Using the @Output decorator with EventEmitter.
+3. Using a shared service.
+4. By directly modifying the parent template.
+Answer: 2. Using the @Output decorator with EventEmitter.
+
+Q3: How do sibling components typically communicate?
+1. Using @ViewChild.
+2. Using a shared service with Dependency Injection.
+3. Using @Output and @Input.
+4. By nesting one component inside another.
+Answer: 2. Using a shared service with Dependency Injection.
+
+Q4: What is the purpose of EventEmitter in Angular?
+1. To inject dependencies into a component.
+2. To emit events from a child component to a parent component.
+3. To bind properties to templates.
+4. To create dynamic components.
+Answer: 2. To emit events from a child component to a parent component.
+
+Q5: What syntax is used to bind an event in Angular?
+1. [event]="handler()"
+2. (event)="handler()"
+3. {{ event }}="handler()"
+4. #event="handler()"
+Answer: 2. (event)="handler()"
+
+Q6: How do you access a child component’s method in the parent component?
+1. Using @Input.
+2. Using @Output.
+3. Using @ViewChild.
+4. Using @ContentChild.
+Answer: 3. Using @ViewChild.
+
+Q7: How do you bind a child component’s input property?
+1. [property]="value"
+2. {{ property }}="value"
+3. (property)="value"
+4. {property}="value"
+Answer: 1. [property]="value"
+
+Q8: How does a parent component listen to an event emitted by a child component?
+1. Using (event)="handler()"
+2. Using [event]="handler()"
+3. Using {event}="handler()"
+4. Using <event>handler()</event>
+Answer: 1. Using (event)="handler()"
+
+Q9: Which lifecycle hook is triggered when an @Input property changes?
+1. ngOnInit
+2. ngAfterViewInit
+3. ngOnChanges
+4. ngDoCheck
+Answer: 3. ngOnChanges
+
+Q10: How can you reference a DOM element or a child component in a template?
+1. Using @ViewChild.
+2. Using a template reference variable.
+3. Using @Output.
+4. Using ngModel.
+Answer: 2. Using a template reference variable.
+
+Q11: How do you create a shared service in Angular?
+1. By adding a service to the providers array in AppModule.
+2. By declaring a service in the template.
+3. By using @Output and @Input decorators.
+4. By adding the service in the bootstrap array.
+Answer: 1. By adding a service to the providers array in AppModule.
+
+Q12: What does the @ViewChild decorator do?
+1. Allows a parent to access properties and methods of a child component.
+2. Emits events to sibling components.
+3. Passes data from parent to child.
+4. Tracks changes to @Input properties.
+Answer: 1. Allows a parent to access properties and methods of a child component.
+
+Q13: How do you use a shared service to communicate between components?
+1. By injecting the service in both components and using shared properties or methods.
+2. By using @Output in the service.
+3. By adding the service to the template.
+4. By declaring the service in the parent component.
+Answer: 1. By injecting the service in both components and using shared properties or methods.
+
+Q14: How can a parent component detect changes in a child component?
+1. By using ngOnInit in the parent.
+2. By listening to events emitted by the child.
+3. By directly modifying the child template.
+4. By using ngModel in the child.
+Answer: 2. By listening to events emitted by the child.
+
+Q15: What is the purpose of the @ContentChild decorator?
+1. To access projected content in the child component.
+2. To access a child component’s template directly.
+3. To bind data from the parent to the child.
+4. To emit events from the parent to the child.
+Answer: 1. To access projected content in the child component.
+
+Q16: Which syntax is used for two-way data binding?
+1. {{ data }}
+2. [(data)]="value"
+3. [data]="value"
+4. (data)="value"
+Answer: 2. [(data)]="value"
+
+Q17: How do you unsubscribe from a service in Angular?
+1. Using the unsubscribe() method of the subscription.
+2. Using stop() in the service.
+3. By calling complete() in the service.
+4. By removing the service from AppModule.
+Answer: 1. Using the unsubscribe() method of the subscription.
+
+Q18: How do you pass data between unrelated components?
+1. Using shared services.
+2. Using @ViewChild.
+3. By nesting the components.
+4. By using ngIf.
+Answer: 1. Using shared services.
+
+Q19: What is the purpose of a template reference variable?
+1. To track changes in data bindings.
+2. To reference a DOM element or child component in a template.
+3. To bind properties to templates.
+4. To create dynamic templates.
+Answer: 2. To reference a DOM element or child component in a template.
+
+Q20: Which lifecycle hook is used to initialize a component?
+1. ngOnChanges
+2. ngOnInit
+3. ngAfterViewInit
+4. ngDoCheck
+Answer: 2. ngOnInit
+
+Q21: How do you listen to DOM events in Angular?
+1. Using (event)="handler()"
+2. Using [event]="handler()"
+3. Using {event}="handler()"
+4. Using @Output.
+Answer: 1. Using (event)="handler()"
+
+Q22: What happens when a child component emits an event?
+1. The parent component’s ngOnChanges is triggered.
+2. The parent component can listen to the event and handle it.
+3. The child component’s ngOnInit is called.
+4. The event is ignored unless explicitly bound.
+Answer: 2. The parent component can listen to the event and handle it.
+
+Q23: How do you trigger a method in the parent component from the child?
+1. By emitting an event using EventEmitter.
+2. By directly accessing the parent component.
+3. By passing a reference variable to the child.
+4. By using @Input.
+Answer: 1. By emitting an event using EventEmitter.
+
+Q24: Which decorator is used to bind a component’s property to a DOM event?
+1. @Input
+2. @Output
+3. @HostListener
+4. @ViewChild
+Answer: 3. @HostListener
+
+Q25: How can you pass a value to an @Input property in a template?
+1. <child [property]="value"></child>
+2. <child (property)="value"></child>
+3. <child {{ property }}="value"></child>
+4. <child #property="value"></child>
+Answer: 1. <child [property]="value"></child>
+
+Q26: How do you share data between modules in Angular?
+1. Using shared services.
+2. By importing the parent module into the child module.
+3. By passing data through @Output.
+4. By using @ViewChild.
+Answer: 1. Using shared services.
+
+Q27: What is the difference between @ViewChild and @ContentChild?
+1. @ViewChild accesses child components in the view, while @ContentChild accesses projected content.
+2. @ContentChild accesses parent components, while @ViewChild accesses sibling components.
+3. @ViewChild is for two-way binding, while @ContentChild is for one-way binding.
+4. They are interchangeable for accessing child components.
+Answer: 1. @ViewChild accesses child components in the view, while @ContentChild accesses projected content.
+
+Q28: How do you prevent a child component from emitting events?
+1. Remove the @Output decorator.
+2. Do not bind to the emitted event in the parent template.
+3. Use a shared service to block events.
+4. Use ngIf to disable the child component.
+Answer: 2. Do not bind to the emitted event in the parent template.
+
+Q29: Which decorator is used for dynamic content projection?
+1. @ViewChild
+2. @ContentChild
+3. @Output
+4. @Input
+Answer: 2. @ContentChild
+
+Q30: What is the purpose of @HostListener in Angular?
+1. To listen to events on the host element.
+2. To pass data between parent and child components.
+3. To define custom lifecycle hooks.
+4. To inject dependencies into the component.
+Answer: 1. To listen to events on the host element.
+
+Q1: What is the purpose of <ng-content> in Angular?
+1. To bind data to templates.
+2. To project content from a parent component into a child component.
+3. To dynamically create components.
+4. To add styles to components.
+Answer: 2. To project content from a parent component into a child component.
+
+Q2: How do you implement single-slot content projection?
+1. By using multiple <ng-content> tags with the select attribute.
+2. By using one <ng-content> tag without the select attribute.
+3. By using the @ContentChild decorator.
+4. By wrapping the content in a div.
+Answer: 2. By using one <ng-content> tag without the select attribute.
+
+Q3: What attribute is used for multi-slot content projection?
+1. name
+2. type
+3. select
+4. id
+Answer: 3. select
+
+Q4: How do you project content into a specific slot in multi-slot content projection?
+1. By adding an id to the content.
+2. By wrapping the content in a <div> tag.
+3. By using the select attribute in the <ng-content> tag.
+4. By binding the content to a property.
+Answer: 3. By using the select attribute in the <ng-content> tag.
+
+Q5: What decorator is used to access a single instance of projected content?
+1. @Input
+2. @Output
+3. @ContentChild
+4. @ContentChildren
+Answer: 3. @ContentChild
+
+Q6: Which lifecycle hook is called after projected content is initialized?
+1. ngOnInit
+2. ngAfterContentInit
+3. ngAfterViewInit
+4. ngDoCheck
+Answer: 2. ngAfterContentInit
+
+Q7: How do you access multiple instances of projected content?
+1. Using @Input.
+2. Using @Output.
+3. Using @ContentChildren.
+4. Using @ContentChild.
+Answer: 3. Using @ContentChildren.
+
+Q8: What Angular feature allows the creation of highly reusable components?
+1. Dependency Injection
+2. Content Projection
+3. Structural Directives
+4. Template Reference Variables
+Answer: 2. Content Projection
+
+Q9: What does the select attribute in <ng-content> do?
+1. Specifies the default content.
+2. Filters the projected content based on a CSS selector.
+3. Binds the content to the component's template.
+4. Defines a name for the projected content.
+Answer: 2. Filters the projected content based on a CSS selector.
+
+Q10: Which directive can be used with <ng-content> to display content conditionally?
+1. *ngFor
+2. *ngIf
+3. [ngStyle]
+4. [ngClass]
+Answer: 2. *ngIf
+
+Q11: What is the purpose of the ngAfterContentChecked lifecycle hook?
+1. To perform additional initialization after content projection.
+2. To check the content projected into the component.
+3. To clean up resources when the component is destroyed.
+4. To dynamically create new components.
+Answer: 2. To check the content projected into the component.
+
+Q12: How do you apply default content in <ng-content>?
+1. By using the default attribute.
+2. By adding content inside <ng-content> tags.
+3. By using a placeholder inside the child component.
+4. By adding a fallback condition in the parent component.
+Answer: 2. By adding content inside <ng-content> tags.
+
+Q13: What is a key advantage of content projection in Angular?
+1. It eliminates the need for services.
+2. It allows for flexible and reusable components.
+3. It simplifies routing in the application.
+4. It automatically manages dependencies.
+Answer: 2. It allows for flexible and reusable components.
+
+Q14: How do you handle projected content dynamically?
+1. By modifying the templateUrl.
+2. By using @ContentChild or @ContentChildren.
+3. By injecting the content directly into the parent component.
+4. By using @Output events.
+Answer: 2. By using @ContentChild or @ContentChildren.
+
+Q15: What happens if no content is passed to an <ng-content> tag?
+1. The component throws an error.
+2. The component remains empty.
+3. The default content inside <ng-content> is displayed.
+4. The application crashes.
+Answer: 3. The default content inside <ng-content> is displayed.
+
+Q16: How do you project multiple <ng-content> elements?
+1. By wrapping all <ng-content> tags in a div.
+2. By using different select attributes for each <ng-content> tag.
+3. By creating multiple child components.
+4. By binding data to each <ng-content> tag.
+Answer: 2. By using different select attributes for each <ng-content> tag.
+
+Q17: What does the @ContentChild decorator return?
+1. A reference to the parent component.
+2. A reference to the first matching instance of projected content.
+3. A list of all instances of projected content.
+4. A binding to the component's template.
+Answer: 2. A reference to the first matching instance of projected content.
+
+Q18: Which decorator is used to query all projected elements that match a selector?
+1. @Input
+2. @ContentChildren
+3. @Output
+4. @ViewChild
+Answer: 2. @ContentChildren
+
+Q19: How can you apply styles to projected content?
+1. By using @Input to pass styles.
+2. By targeting the content with global CSS.
+3. By wrapping the content in a div with a class.
+4. By using a custom directive to style the content.
+Answer: 4. By using a custom directive to style the content.
+
+Q20: How do you ensure projected content is initialized before accessing it?
+1. By using ngAfterContentInit.
+2. By calling a service in ngOnInit.
+3. By using @ViewChild to access the content.
+4. By delaying the content access until ngDoCheck.
+Answer: 1. By using ngAfterContentInit.
+
+Q21: What happens when you use <ng-content> without the select attribute?
+1. It projects no content.
+2. It projects all content into the component.
+3. It throws a compilation error.
+4. It only projects text nodes.
+Answer: 2. It projects all content into the component.
+
+Q23: How can you conditionally project content into a component?
+1. By wrapping the content in div tags.
+2. By using a *ngIf directive in the parent component.
+3. By using the ng-template directive with <ng-content>.
+4. By toggling the visibility of the child component.
+Answer: 3. By using the ng-template directive with <ng-content>.
+
+Q24: What is the primary difference between <ng-container> and <ng-content>?
+1. <ng-container> is used for grouping elements without adding extra DOM nodes, while <ng-content> is used for content projection.
+2. <ng-content> does not render the content, while <ng-container> always does.
+3. <ng-container> is used for lazy loading, while <ng-content> is not.
+4. There is no difference between <ng-container> and <ng-content>.
+Answer: 1. <ng-container> is used for grouping elements without adding extra DOM nodes, while <ng-content> is used for content projection.
+
+Q25: How do you pass dynamic templates to a reusable component?
+1. By using @ContentChild.
+2. By using ng-template.
+3. By using @Output.
+4. By using [routerLink].
+Answer: 2. By using ng-template.
+
+Q26: What Angular feature makes <ng-content> effective for reusability?
+1. Dependency Injection
+2. Content Projection
+3. Template Reference Variables
+4. Lazy Loading
+Answer: 2. Content Projection
+
+Q27: How do you update content in @ContentChild dynamically?
+1. By using ngDoCheck.
+2. By listening to changes in ngAfterContentChecked.
+3. By reinitializing the child component.
+4. By modifying the parent template directly.
+Answer: 2. By listening to changes in ngAfterContentChecked.
+
+Q29: How do you define multiple content slots in a reusable component?
+1. By using multiple <ng-content> tags with unique select attributes.
+2. By creating a service to handle slots.
+3. By nesting components within the reusable component.
+4. By using @Output to define the slots.
+Answer: 1. By using multiple <ng-content> tags with unique select attributes.
+
+Q30: What is the best use case for content projection in Angular?
+1. To simplify routing.
+2. To dynamically share services between components.
+3. To create reusable and flexible components.
+4. To optimize application performance.
+Answer: 3. To create reusable and flexible components.
+
+Q1: What is the purpose of pipes in Angular?
+1. To format and transform data in templates.
+2. To handle routing in the application.
+3. To bind data to components.
+4. To handle events in templates.
+Answer: 1. To format and transform data in templates.
+
+Q2: How do you apply a pipe in Angular?
+1. By using the @Pipe decorator.
+2. By using pipe(data) in the component.
+3. By using the | operator in the template.
+4. By defining it in the @Component decorator.
+Answer: 3. By using the | operator in the template.
+
+Q3: What does the date pipe do?
+1. Formats numbers into dates.
+2. Formats dates into a specific format.
+3. Parses JSON objects.
+4. Converts strings to numbers.
+Answer: 2. Formats dates into a specific format.
+
+Q4: Which of the following is an example of chaining pipes?
+1. {{ data | pipe1.pipe2 }}
+2. {{ data | pipe1 | pipe2 }}
+3. {{ data.pipe(pipe1, pipe2) }}
+4. {{ data | pipe1(pipe2) }}
+Answer: 2. {{ data | pipe1 | pipe2 }}
+
+Q5: What does the currency pipe output by default?
+1. Numbers in a percentage format.
+2. Numbers with the default currency of the current locale.
+3. Strings converted to numbers.
+4. Numbers with a fixed decimal format.
+Answer: 2. Numbers with the default currency of the current locale.
+
+Q6: How do you pass parameters to a pipe?
+1. {{ data | pipeName(param) }}
+2. {{ data | pipeName:param }}
+3. {{ data | pipeName[param] }}
+4. {{ data | pipeName(param1, param2) }}
+Answer: 2. {{ data | pipeName
+
+Q7: Which pipe converts text to uppercase?
+1. lowercase
+2. uppercase
+3. capitalize
+4. text-transform
+Answer: 2. uppercase
+
+Q8: What is the purpose of the slice pipe?
+1. To slice arrays or strings based on specified indices.
+2. To format numbers as percentages.
+3. To convert numbers to strings.
+4. To split strings into arrays.
+Answer: 1. To slice arrays or strings based on specified indices.
+
+Q9: How do you create a custom pipe in Angular?
+1. By implementing the PipeTransform interface and using the @Pipe decorator.
+2. By defining a function in the component.
+3. By adding it to the module's imports array.
+4. By using the @Component decorator.
+Answer: 1. By implementing the PipeTransform interface and using the @Pipe decorator.
+
+Q10: What is the difference between pure and impure pipes?
+1. Pure pipes are faster than impure pipes.
+2. Pure pipes are called only when input data changes, while impure pipes are called on every change detection cycle.
+3. Pure pipes are created using @Pipe, while impure pipes are created using @Component.
+4. Impure pipes are used for asynchronous operations only.
+Answer: 2. Pure pipes are called only when input data changes, while impure pipes are called on every change detection cycle.
+
+Q11: What does the json pipe do?
+1. Converts JSON strings to objects.
+2. Formats objects as JSON strings.
+3. Parses numbers into JSON strings.
+4. Splits JSON into arrays.
+Answer: 2. Formats objects as JSON strings.
+
+Q12: What does the percent pipe do?
+1. Formats numbers as percentages.
+2. Converts percentages to fractions.
+3. Parses percentages into numbers.
+4. Converts strings into percentages.
+Answer: 1. Formats numbers as percentages.
+
+Q13: Which pipe automatically subscribes to Observables?
+1. async
+2. json
+3. subscribe
+4. observable
+Answer: 1. async
+
+Q14: What is the syntax to use the async pipe?
+1. {{ observable | async }}
+2. {{ async(observable) }}
+3. {{ observable.async }}
+4. {{ observable | pipe(async) }}
+Answer: 1. {{ observable | async }}
+
+Q15: Which pipe would you use to format a number to two decimal places?
+1. decimal
+2. number
+3. percent
+4. currency
+Answer: 2. number
+
+Q16: What is required to define a custom pipe?
+1. The @Component decorator.
+2. The PipeTransform interface and @Pipe decorator.
+3. The @Directive decorator.
+4. The NgModule decorator.
+Answer: 2. The PipeTransform interface and @Pipe decorator.
+
+Q17: How do you transform data using a pipe in Angular templates?
+1. Using data.pipe(pipeName).
+2. Using | syntax: {{ data | pipeName }}.
+3. Using pipe(data, pipeName).
+4. By binding data to a directive.
+Answer: 2. Using | syntax
+
+Q18: Which Angular module includes the built-in pipes?
+1. CommonModule
+2. FormsModule
+3. ReactiveFormsModule
+4. HttpClientModule
+Answer: 1. CommonModule
+
+Q19: How do you apply the slice pipe to an array?
+1. {{ array.slice(start, end) }}
+2. {{ array | slice:start:end }}
+3. {{ slice(array, start, end) }}
+4. {{ array.slice | pipe:start:end }}
+Answer: 2. {{ array | slice
+
+Q20: What does the lowercase pipe do?
+1. Converts all text to lowercase.
+2. Converts the first letter of each word to lowercase.
+3. Formats text as JSON.
+4. Strips non-alphanumeric characters from strings.
+Answer: 1. Converts all text to lowercase.
+
+Q21: How do you handle an Observable or Promise directly in a template?
+1. By using the json pipe.
+2. By using the async pipe.
+3. By subscribing in the component.
+4. By using the number pipe.
+Answer: 2. By using the async pipe.
+
+Q22: How do you pass multiple arguments to a pipe?
+1. {{ data | pipe:arg1:arg2 }}
+2. {{ data | pipe(arg1, arg2) }}
+3. {{ pipe(data, arg1, arg2) }}
+4. {{ data.pipe:arg1:arg2 }}
+Answer: 1. {{ data | pipe
+
+Q23: Which pipe would you use to extract a portion of a string?
+1. json
+2. slice
+3. percent
+4. number
+Answer: 2. slice
+
+Q24: Can pipes be used in component logic?
+1. Yes, but only built-in pipes.
+2. Yes, by importing the pipe and using its transform method.
+3. No, pipes are limited to templates.
+4. Yes, but only in services.
+Answer: 2. Yes, by importing the pipe and using its transform method.
+
+Q25: What does the currency pipe default to if no currency is specified?
+1. USD
+2. Local currency based on locale.
+3. EUR
+4. GBP
+Answer: 2. Local currency based on locale.
+
+Q26: What is the default behavior of a pure pipe?
+1. Called on every change detection cycle.
+2. Called only when the input data changes.
+3. Runs asynchronously.
+4. Converts data into Observables.
+Answer: 2. Called only when the input data changes.
+
+Q27: What is a key difference between a pure and an impure pipe?
+1. Impure pipes can only be used with Observables.
+2. Impure pipes are called on every change detection cycle.
+3. Pure pipes are used for templates, while impure pipes are used in components.
+4. Pure pipes cannot accept parameters.
+Answer: 2. Impure pipes are called on every change detection cycle.
+
+Q28: How do you transform an object into a JSON string in a template?
+1. Using the async pipe.
+2. Using the json pipe.
+3. Using JSON.stringify() in the component.
+4. Using the slice pipe.
+Answer: 2. Using the json pipe.
+
+Q29: What is a common use case for the async pipe?
+1. Formatting text as JSON.
+2. Handling Observables or Promises in templates.
+3. Formatting percentages.
+4. Extracting substrings from text.
+Answer: 2. Handling Observables or Promises in templates.
+
+Q30: What is the main advantage of using pipes in Angular?
+1. They improve application performance.
+2. They simplify data transformation in templates.
+3. They reduce the size of the application.
+4. They automatically handle Observables.
+Answer: 2. They simplify data transformation in templates.
+
+Q1: What is the primary purpose of Dependency Injection in Angular?
+1. To manage component styles dynamically.
+2. To provide dependencies to classes without manual instantiation.
+3. To handle routing in the application.
+4. To render templates conditionally.
+Answer: 2. To provide dependencies to classes without manual instantiation.
+
+Q2: What is the role of an injector in Angular's DI system?
+1. To fetch data from a server.
+2. To create and provide instances of dependencies.
+3. To define component templates.
+4. To handle routing in the application.
+Answer: 2. To create and provide instances of dependencies.
+
+Q3: How do you register a service globally in Angular?
+1. By adding it to the component’s providers array.
+2. By using providedIn: 'root' in the service's @Injectable decorator.
+3. By importing it in the AppModule.
+4. By defining it in angular.json.
+Answer: 2. By using providedIn
+
+Q4: What does providedIn
+1. The service is scoped to a single component.
+2. The service is available globally and is tree-shakable.
+3. The service is only available in lazy-loaded modules.
+4. The service is registered in the AppModule.
+Answer: 2. The service is available globally and is tree-shakable.
+
+Q5: What decorator is used to make a class injectable in Angular?
+1. @Component
+2. @Directive
+3. @Injectable
+4. @Pipe
+Answer: 3. @Injectable
+
+Q6: What is an Angular provider?
+1. A directive that modifies the DOM.
+2. A configuration object that defines how to create a dependency.
+3. A class used for routing.
+4. A decorator for defining components.
+Answer: 2. A configuration object that defines how to create a dependency.
+
+Q7: How can you create multiple providers for the same dependency token?
+1. By registering them in the imports array.
+2. By using multi-provider tokens.
+3. By declaring them in the declarations array.
+4. By using providedIn: 'multi'.
+Answer: 2. By using multi-provider tokens.
+
+Q8: What does the @Optional decorator do?
+1. Marks a dependency as optional and injects null if unavailable.
+2. Prevents the dependency from being injected.
+3. Marks a service as lazily loaded.
+4. Configures the dependency to be injected only once.
+Answer: 1. Marks a dependency as optional and injects null if unavailable.
+
+Q9: What happens when a service is provided in a component’s providers array?
+1. It becomes a singleton service across the application.
+2. A new instance of the service is created for that component and its children.
+3. The service is registered globally.
+4. The service is tree-shakable.
+Answer: 2. A new instance of the service is created for that component and its children.
+
+Q10: Which Angular feature is used to uniquely identify a dependency in DI?
+1. Dependency Injection Tokens
+2. Directives
+3. Providers
+4. Modules
+Answer: 1. Dependency Injection Tokens
+
+Q11: What is the default scope of a service provided in the root injector?
+1. Scoped to a specific module.
+2. Scoped to a specific component.
+3. Available globally as a singleton.
+4. Scoped to a directive.
+Answer: 3. Available globally as a singleton.
+
+Q12: How do you inject a dependency into a component?
+1. By using the @Injectable decorator.
+2. By importing it into the component.
+3. By adding it to the constructor of the component.
+4. By adding it to the component’s providers array.
+Answer: 3. By adding it to the constructor of the component.
+
+Q13: What is the purpose of the InjectionToken class?
+1. To define reusable templates.
+2. To create custom DI tokens.
+3. To manage routing in Angular.
+4. To bind data to components.
+Answer: 2. To create custom DI tokens.
+
+Q14: How do you inject a dependency manually in Angular?
+1. Using Injector.get().
+2. Using @Inject in the constructor.
+3. By adding it to the imports array.
+4. By declaring it in the AppModule.
+Answer: 1. Using Injector.get().
+
+Q15: What is a singleton service in Angular?
+1. A service that is destroyed after a single use.
+2. A service that is shared across the entire application.
+3. A service that is restricted to a single component.
+4. A service that is lazily loaded.
+Answer: 2. A service that is shared across the entire application.
+
+Q16: How do you ensure a service is not globally available?
+1. Use providedIn: 'module'.
+2. Add the service to the component’s providers array.
+3. Declare the service as private in the AppModule.
+4. Import the service in the root module.
+Answer: 2. Add the service to the component’s providers array.
+
+Q17: What is the purpose of the @Inject decorator?
+1. To define a custom DI token.
+2. To explicitly specify a dependency to inject.
+3. To mark a class as injectable.
+4. To configure a provider.
+Answer: 2. To explicitly specify a dependency to inject.
+
+Q18: What is the difference between providedIn
+1. 'root' provides a singleton service globally, while 'any' creates a new instance for each module.
+2. 'root' creates a service per component, while 'any' creates a singleton service.
+3. 'root' is used for lazy-loaded modules, while 'any' is used for preloaded modules.
+4. There is no difference between 'root' and 'any'.
+Answer: 1. 'root' provides a singleton service globally, while 'any' creates a new instance for each module.
+
+Q19: How do you handle dependencies in a lazy-loaded module?
+1. Use the @LazyInject decorator.
+2. Use providedIn: 'root' for services.
+3. Provide the service in the module’s providers array.
+4. Import the service in the AppModule.
+Answer: 3. Provide the service in the module’s providers array.
+
+Q20: What is the purpose of hierarchical injectors?
+1. To prevent duplicate dependencies.
+2. To provide different instances of services at different levels.
+3. To enforce strict type-checking for dependencies.
+4. To optimize application performance.
+Answer: 2. To provide different instances of services at different levels.
+
+Q21: How do you make a service tree-shakable in Angular?
+1. Use @Injectable without a provider.
+2. Use providedIn: 'root' in the service.
+3. Add the service to the AppModule.
+4. Use @Optional in the service constructor.
+Answer: 2. Use providedIn
+
+Q22: Which decorator ensures a dependency is injected only if it is available?
+1. @Injectable
+2. @Optional
+3. @Inject
+4. @ContentChild
+Answer: 2. @Optional
+
+Q23: What happens when a dependency is not registered in DI?
+1. The application throws an error.
+2. The dependency is automatically created.
+3. Angular ignores the dependency.
+4. The dependency is set to undefined.
+Answer: 1. The application throws an error.
+
+Q24: How do you share data between unrelated components in Angular?
+1. Use a shared service with DI.
+2. Use @Input and @Output.
+3. Use template reference variables.
+4. Use ngModel.
+Answer: 1. Use a shared service with DI.
+
+Q25: Which lifecycle hook can be used to access services injected into a component?
+1. ngAfterViewInit
+2. ngOnInit
+3. ngAfterContentInit
+4. ngDoCheck
+Answer: 2. ngOnInit
+
+Q26: How do you provide a default value for a dependency?
+1. Use the default keyword in the service.
+2. Use the InjectionToken with a factory function.
+3. Add the value in the AppModule.
+4. Declare the dependency as @Optional.
+Answer: 2. Use the InjectionToken with a factory function.
+
+Q27: How do you limit the scope of a service to a specific feature module?
+1. Use providedIn: 'feature'.
+2. Provide the service in the module’s providers array.
+3. Import the service only in the AppModule.
+4. Add the service to the component’s providers array.
+Answer: 2. Provide the service in the module’s providers array.
+
+Q28: What does Angular’s DI system use to resolve dependencies?
+1. A tree structure.
+2. A hierarchical injector.
+3. A flat dependency map.
+4. A singleton pattern.
+Answer: 2. A hierarchical injector.
+
+Q29: Which type of provider allows for multiple values under a single token?
+1. Factory providers.
+2. Multi-provider tokens.
+3. Singleton providers.
+4. Value providers.
+Answer: 2. Multi-provider tokens.
+
+Q30: What is the main advantage of Dependency Injection in Angular?
+1. It improves runtime performance.
+2. It simplifies testing and promotes reusability.
+3. It eliminates the need for templates.
+4. It automatically handles routing.
+Answer: 2. It simplifies testing and promotes reusability.
+
+Q1: What are the three types of directives in Angular?
+1. Component, Template, Attribute
+2. Component, Structural, Attribute
+3. Module, Structural, Template
+4. Component, Module, Attribute
+Answer: 2. Component, Structural, Attribute
+
+Q2: How do you create a custom directive in Angular?
+1. By using the @Component decorator.
+2. By using the @Directive decorator.
+3. By using the @Pipe decorator.
+4. By using the @NgModule decorator.
+Answer: 2. By using the @Directive decorator.
+
+Q3: Which directive is used to conditionally add or remove elements from the DOM?
+1. *ngStyle
+2. *ngFor
+3. *ngIf
+4. *ngClass
+Answer: 3. *ngIf
+
+Q4: What does the @HostListener decorator do?
+1. Binds properties to the host element.
+2. Listens to events on the host element.
+3. Creates a new component dynamically.
+4. Configures the dependency injection.
+Answer: 2. Listens to events on the host element.
+
+Q5: How do you bind a property to the host element in a directive?
+1. Using @Input.
+2. Using @HostBinding.
+3. Using @Output.
+4. Using @Directive.
+Answer: 2. Using @HostBinding.
+
+Q6: What is the default view encapsulation mode in Angular?
+1. None
+2. Emulated
+3. ShadowDom
+4. Native
+Answer: 2. Emulated
+
+Q7: Which directive is used to apply CSS classes dynamically in Angular?
+1. *ngFor
+2. ngClass
+3. ngStyle
+4. *ngIf
+Answer: 2. ngClass
+
+Q8: How do you dynamically create a component in Angular?
+1. Using ComponentFactoryResolver.
+2. Using ng-content.
+3. Using @Input and @Output.
+4. Using DirectiveResolver.
+Answer: 1. Using ComponentFactoryResolver.
+
+Q9: What is the purpose of <ng-content> in Angular?
+1. To bind data to a template.
+2. To project content into a reusable component.
+3. To dynamically load a module.
+4. To handle events in the template.
+Answer: 2. To project content into a reusable component.
+
+Q10: Which lifecycle hook is called after content projection is initialized?
+1. ngOnInit
+2. ngDoCheck
+3. ngAfterContentInit
+4. ngAfterViewInit
+Answer: 3. ngAfterContentInit
+
+Q11: What is the purpose of *ngFor in Angular?
+1. To style elements dynamically.
+2. To iterate over a collection and create elements dynamically.
+3. To apply conditional logic to elements.
+4. To bind events to DOM elements.
+Answer: 2. To iterate over a collection and create elements dynamically.
+
+Q12: How do you apply inline styles dynamically in Angular?
+1. Using [ngClass].
+2. Using [ngStyle].
+3. Using style="value".
+4. Using *ngIf.
+Answer: 2. Using [ngStyle].
+
+Q13: What does the ng-template directive do?
+1. Defines a template for conditional rendering.
+2. Projects content into a reusable component.
+3. Creates a dynamic service in the module.
+4. Configures routing for the application.
+Answer: 1. Defines a template for conditional rendering.
+
+Q14: Which decorator is used for content projection queries?
+1. @ViewChild
+2. @HostBinding
+3. @ContentChild
+4. @Directive
+Answer: 3. @ContentChild
+
+Q15: How do you detect changes to the DOM in a component?
+1. Using ngOnChanges.
+2. Using ngAfterViewInit.
+3. Using ngAfterContentInit.
+4. Using ngDoCheck.
+Answer: 4. Using ngDoCheck.
+
+Q16: What is the purpose of the @Input decorator?
+1. To pass data from a child component to a parent component.
+2. To pass data from a parent component to a child component.
+3. To emit events to a parent component.
+4. To bind CSS classes dynamically.
+Answer: 2. To pass data from a parent component to a child component.
+
+Q17: How do you create a two-way data binding in Angular?
+1. Using {{ data }}.
+2. Using [data]="value".
+3. Using [(ngModel)]="value".
+4. Using (ngModel).
+Answer: 3. Using [(ngModel)]="value".
+
+Q18: Which lifecycle hook is used for component initialization?
+1. ngOnChanges
+2. ngAfterViewInit
+3. ngOnInit
+4. ngDoCheck
+Answer: 3. ngOnInit
+
+Q19: How do you make a directive apply styles to its host element?
+1. Using @Input.
+2. Using @HostBinding.
+3. Using @Output.
+4. Using @Directive.
+Answer: 2. Using @HostBinding.
+
+Q20: What is the purpose of the ng-container directive?
+1. To group elements without adding extra DOM nodes.
+2. To conditionally render elements.
+3. To dynamically load modules.
+4. To bind data to the DOM.
+Answer: 1. To group elements without adding extra DOM nodes.
+
+Q21: How do you enable a directive to listen to multiple DOM events?
+1. Using multiple @HostListener decorators.
+2. Using @ContentChild.
+3. Using the @Directive decorator.
+4. By creating a custom service.
+Answer: 1. Using multiple @HostListener decorators.
+
+Q22: What does the ng-content select attribute do?
+1. Filters the projected content based on a CSS selector.
+2. Dynamically binds data to the DOM.
+3. Enables dynamic routing in the application.
+4. Configures services for content projection.
+Answer: 1. Filters the projected content based on a CSS selector.
+
+Q23: How do you create a reusable structural directive in Angular?
+1. Using the @Component decorator.
+2. Using the @Directive decorator with * syntax.
+3. Using the @Pipe decorator.
+4. Using the @NgModule decorator.
+Answer: 2. Using the @Directive decorator with * syntax.
+
+Q24: What is the purpose of Renderer2 in directives?
+1. To directly manipulate the DOM in a secure way.
+2. To apply global styles to the application.
+3. To handle routing in Angular.
+4. To bind data to child components.
+Answer: 1. To directly manipulate the DOM in a secure way.
+
+Q25: What does the @Output decorator do?
+1. Passes data from a parent to a child component.
+2. Emits events from a child component to a parent component.
+3. Binds CSS styles dynamically.
+4. Filters projected content.
+Answer: 2. Emits events from a child component to a parent component.
+
+Q26: How do you implement lazy-loaded components dynamically?
+1. Using loadChildren in the routing configuration.
+2. Using ComponentFactoryResolver.
+3. Using ng-template.
+4. Using @ViewChild.
+Answer: 2. Using ComponentFactoryResolver.
+
+Q27: What is the difference between ng-content and ng-container?
+1. ng-content projects content, while ng-container groups elements without adding DOM nodes.
+2. ng-content is used for templates, while ng-container is for services.
+3. ng-container replaces components, while ng-content handles data.
+4. There is no difference between them.
+Answer: 1. ng-content projects content, while ng-container groups elements without adding DOM nodes.
+
+Q28: Which directive is used for conditional rendering in Angular?
+1. *ngClass
+2. *ngIf
+3. *ngFor
+4. *ngStyle
+Answer: 2. *ngIf
+
+Q29: How do you style a component's host element dynamically?
+1. Using @HostBinding.
+2. Using @Input.
+3. Using @ContentChild.
+4. Using @Directive.
+Answer: 1. Using @HostBinding.
+
+Q30: What is the main advantage of creating custom directives in Angular?
+1. To simplify component testing.
+2. To reuse logic and behavior across multiple elements.
+3. To improve the application’s runtime performance.
+4. To handle routing dynamically.
+Answer: 2. To reuse logic and behavior across multiple elements.
+
+Q1: What module is used to make HTTP requests in Angular?
+1. FormsModule
+2. HttpClientModule
+3. RouterModule
+4. ReactiveFormsModule
+Answer: 2. HttpClientModule
+
+Q2: Which method is used to fetch data from the server?
+1. post
+2. put
+3. get
+4. delete
+Answer: 3. get
+
+Q3: How do you send JSON data in an HTTP POST request?
+1. By using HttpHeaders.
+2. By passing the data as the second argument to http.post().
+3. By encoding the data manually.
+4. By using HttpInterceptor.
+Answer: 2. By passing the data as the second argument to http.post().
+
+Q4: What does the subscribe method do in Observables?
+1. Creates a new Observable.
+2. Listens to the data emitted by an Observable.
+3. Modifies the Observable stream.
+4. Completes the Observable.
+Answer: 2. Listens to the data emitted by an Observable.
+
+Q5: Which RxJS operator is used to transform data in an Observable?
+1. map
+2. filter
+3. catchError
+4. mergeMap
+Answer: 1. map
+
+Q6: How do you handle errors in an Observable?
+1. Using map.
+2. Using catchError.
+3. Using switchMap.
+4. Using subscribe.
+Answer: 2. Using catchError.
+
+Q7: Which Angular feature is used to modify HTTP requests globally?
+1. HttpHeaders
+2. HttpClient
+3. HttpInterceptor
+4. BehaviorSubject
+Answer: 3. HttpInterceptor
+
+Q8: How do you add custom headers to an HTTP request?
+1. Using the HttpHeaders class.
+2. Using the @Input decorator.
+3. Using the async pipe.
+4. Using the HttpInterceptor.
+Answer: 1. Using the HttpHeaders class.
+
+Q9: Which RxJS operator is used to combine multiple Observables?
+1. mergeMap
+2. switchMap
+3. combineLatest
+4. catchError
+Answer: 3. combineLatest
+
+Q10: What does the BehaviorSubject class do?
+1. Emits only the initial value.
+2. Emits the last value to new subscribers.
+3. Emits only unique values.
+4. Completes the Observable immediately.
+Answer: 2. Emits the last value to new subscribers.
+
+Q11: What is the purpose of the async pipe in Angular?
+1. To handle routing asynchronously.
+2. To automatically subscribe to Observables in templates.
+3. To create new Observables.
+4. To catch errors in Observables.
+Answer: 2. To automatically subscribe to Observables in templates.
+
+Q12: Which HTTP method is used to delete data from the server?
+1. GET
+2. POST
+3. DELETE
+4. PUT
+Answer: 3. DELETE
+
+Q13: How do you unsubscribe from an Observable?
+1. By using the catchError operator.
+2. By using the unsubscribe method.
+3. By using the switchMap operator.
+4. By using the takeUntil operator.
+Answer: 2. By using the unsubscribe method.
+
+Q14: Which RxJS operator is used to handle nested Observables?
+1. mergeMap
+2. filter
+3. map
+4. take
+Answer: 1. mergeMap
+
+Q15: How do you intercept and modify HTTP requests globally in Angular?
+1. Using HttpHeaders.
+2. By implementing an HttpInterceptor.
+3. By modifying the HttpClient directly.
+4. By creating a new Observable.
+Answer: 2. By implementing an HttpInterceptor.
+
+Q16: What is the purpose of the takeUntil operator?
+1. To automatically complete an Observable based on a notifier Observable.
+2. To merge multiple Observables.
+3. To handle errors in Observables.
+4. To map data in an Observable.
+Answer: 1. To automatically complete an Observable based on a notifier Observable.
+
+Q17: Which method is used to update data on the server?
+1. GET
+2. POST
+3. PUT
+4. DELETE
+Answer: 3. PUT
+
+Q18: What does the filter operator do in RxJS?
+1. Transforms data in an Observable.
+2. Filters out values based on a condition.
+3. Handles errors in an Observable.
+4. Combines multiple Observables.
+Answer: 2. Filters out values based on a condition.
+
+Q19: How do you retry a failed HTTP request in Angular?
+1. Using catchError.
+2. Using the retry operator.
+3. Using the map operator.
+4. Using the async pipe.
+Answer: 2. Using the retry operator.
+
+Q20: What is the purpose of the switchMap operator?
+1. To map data in an Observable.
+2. To switch to a new Observable and cancel previous ones.
+3. To handle errors in an Observable.
+4. To merge multiple Observables.
+Answer: 2. To switch to a new Observable and cancel previous ones.
+
+Q21: How do you test an HTTP service in Angular?
+1. By mocking the HttpClient.
+2. By injecting the HttpInterceptor.
+3. By creating an actual HTTP request.
+4. By using the RouterTestingModule.
+Answer: 1. By mocking the HttpClient.
+
+Q22: What does the retry operator do?
+1. Retries a failed Observable sequence a specified number of times.
+2. Combines multiple Observables into one.
+3. Maps data emitted by an Observable.
+4. Filters data based on conditions.
+Answer: 1. Retries a failed Observable sequence a specified number of times.
+
+Q23: What does the HttpParams class do?
+1. Adds headers to an HTTP request.
+2. Sends data in the body of an HTTP request.
+3. Appends query parameters to an HTTP request.
+4. Modifies the HTTP interceptor.
+Answer: 3. Appends query parameters to an HTTP request.
+
+Q24: How do you chain multiple HTTP requests in Angular?
+1. Using the async pipe.
+2. Using the switchMap operator.
+3. By calling subscribe multiple times.
+4. By using HttpHeaders.
+Answer: 2. Using the switchMap operator.
+
+Q25: What does the catchError operator return?
+1. A modified value.
+2. A new Observable with an error handler.
+3. A promise that resolves to null.
+4. A boolean value.
+Answer: 2. A new Observable with an error handler.
+
+Q26: How do you pass query parameters in an HTTP GET request?
+1. By using the HttpHeaders class.
+2. By passing an object to the params option in http.get().
+3. By appending them manually to the URL.
+4. By using the async pipe.
+Answer: 2. By passing an object to the params option in http.get().
+
+Q27: Which RxJS operator is used to complete an Observable when the first emission occurs?
+1. take
+2. filter
+3. map
+4. switchMap
+Answer: 1. take
+
+Q28: How do you unsubscribe automatically from an Observable in Angular templates?
+1. Using the catchError operator.
+2. Using the async pipe.
+3. Using the unsubscribe method.
+4. Using the takeUntil operator.
+Answer: 2. Using the async pipe.
+
+Q29: What is the purpose of the HttpInterceptor interface?
+1. To define routes for lazy-loaded modules.
+2. To handle HTTP requests and responses globally.
+3. To manage Observables in templates.
+4. To create custom validators.
+Answer: 2. To handle HTTP requests and responses globally.
+
+Q30: Which RxJS operator is used to handle side effects in an Observable?
+1. tap
+2. map
+3. filter
+4. switchMap
+Answer: 1. tap
+
+Q1: What is the purpose of unit testing?
+1. To deploy an application to production.
+2. To test individual units of code for expected behavior.
+3. To ensure cross-browser compatibility.
+4. To handle routing in Angular applications.
+Answer: 2. To test individual units of code for expected behavior.
+
+Q2: Which Angular tool is used to set up and configure the testing environment?
+1. Karma
+2. TestBed
+3. Jasmine
+4. HttpClient
+Answer: 2. TestBed
+
+Q3: Which testing framework is used by default in Angular CLI projects?
+1. Mocha
+2. Jasmine
+3. Jest
+4. Chai
+Answer: 2. Jasmine
+
+Q4: How do you test asynchronous operations in Angular?
+1. By using fakeAsync and tick().
+2. By using TestBed.inject().
+3. By using toThrow.
+4. By using TestBed.overrideModule().
+Answer: 1. By using fakeAsync and tick().
+
+Q5: What is the purpose of the HttpTestingController in Angular?
+1. To mock HTTP requests during unit testing.
+2. To configure dependency injection.
+3. To set up route guards.
+4. To handle browser compatibility issues.
+Answer: 1. To mock HTTP requests during unit testing.
+
+Q6: How do you replace a service dependency with a mock object in a test?
+1. By using TestBed.overrideComponent().
+2. By using TestBed.overrideProvider().
+3. By using fakeAsync().
+4. By using inject().
+Answer: 2. By using TestBed.overrideProvider().
+
+Q7: What does the fixture.detectChanges() method do?
+1. Initializes the test environment.
+2. Triggers Angular’s change detection in the test.
+3. Mocks service dependencies.
+4. Verifies the test results.
+Answer: 2. Triggers Angular’s change detection in the test.
+
+Q8: Which function is used to assert that a method was called in Jasmine?
+1. toEqual
+2. toContain
+3. toHaveBeenCalled
+4. toThrow
+Answer: 3. toHaveBeenCalled
+
+Q9: How do you simulate the passage of time in an Angular unit test?
+1. By using fakeAsync and tick().
+2. By using async.
+3. By using toBe.
+4. By using inject().
+Answer: 1. By using fakeAsync and tick().
+
+Q10: What is the purpose of TestBed.configureTestingModule()?
+1. To create a test component.
+2. To configure and initialize the Angular testing environment.
+3. To mock service dependencies.
+4. To handle HTTP requests.
+Answer: 2. To configure and initialize the Angular testing environment.
+
+Q11: What is a spy in Jasmine?
+1. A tool to mock HTTP requests.
+2. A function that tracks calls and arguments.
+3. A tool to handle async operations.
+4. A tool to verify code coverage.
+Answer: 2. A function that tracks calls and arguments.
+
+Q12: Which method is used to compile components in a testing module?
+1. compileComponents()
+2. createComponent()
+3. initializeComponents()
+4. testComponents()
+Answer: 1. compileComponents()
+
+Q13: What is the purpose of the inject function in Angular tests?
+1. To dynamically create components.
+2. To inject services or dependencies into a test.
+3. To mock HTTP requests.
+4. To track function calls.
+Answer: 2. To inject services or dependencies into a test.
+
+Q14: How do you verify the value of a variable in a test?
+1. Using toEqual().
+2. Using toBe().
+3. Using toHaveBeenCalled().
+4. Using toThrow().
+Answer: 1. Using toEqual().
+
+Q15: What is the default test runner used in Angular projects?
+1. Mocha
+2. Jasmine
+3. Karma
+4. Jest
+Answer: 3. Karma
+
+Q16: How do you test a component’s HTML template?
+1. By using TestBed.createComponent().
+2. By using fixture.debugElement.nativeElement.
+3. By using inject().
+4. By using compileComponents().
+Answer: 2. By using fixture.debugElement.nativeElement.
+
+Q17: How do you verify that an exception is thrown in a test?
+1. Using toEqual().
+2. Using toContain().
+3. Using toThrow().
+4. Using toBe().
+Answer: 3. Using toThrow().
+
+Q18: Which lifecycle hook is useful for initializing component inputs in tests?
+1. ngOnInit
+2. ngAfterViewInit
+3. ngOnDestroy
+4. ngDoCheck
+Answer: 1. ngOnInit
+
+Q19: What does the jasmine.createSpy() function do?
+1. Mocks an entire service.
+2. Creates a mock function that tracks calls.
+3. Simulates HTTP requests.
+4. Initializes the testing environment.
+Answer: 2. Creates a mock function that tracks calls.
+
+Q20: What is the purpose of the done() callback in tests?
+1. To handle async operations in tests.
+2. To track function calls.
+3. To mock HTTP requests.
+4. To initialize test modules.
+Answer: 1. To handle async operations in tests.
+
+Q21: How do you check if an element exists in a component’s DOM?
+1. Using fixture.detectChanges().
+2. Using fixture.debugElement.query().
+3. Using TestBed.overrideComponent().
+4. Using inject().
+Answer: 2. Using fixture.debugElement.query().
+
+Q22: Which function is used to handle asynchronous tests in Jasmine?
+1. async
+2. fakeAsync
+3. beforeEach
+4. tick
+Answer: 1. async
+
+Q23: How do you ensure a test module is configured before each test case?
+1. By using afterEach().
+2. By using beforeEach().
+3. By using it().
+4. By using describe().
+Answer: 2. By using beforeEach().
+
+Q24: How do you measure code coverage in Angular?
+1. By using TestBed.
+2. By using Karma with coverage reporters.
+3. By using toEqual().
+4. By using tick().
+Answer: 2. By using Karma with coverage reporters.
+
+Q25: Which matcher is used to check if a string contains a specific substring?
+1. toContain()
+2. toBe()
+3. toEqual()
+4. toThrow()
+Answer: 1. toContain().
+
+Q26: How do you handle dependencies that are not directly provided in the test?
+1. By mocking them using spyOn().
+2. By importing the actual service.
+3. By adding them to TestBed.configureTestingModule().
+4. By overriding them globally.
+Answer: 3. By adding them to TestBed.configureTestingModule().
+
+Q27: What does the tick() function do in Angular tests?
+1. Tracks function calls.
+2. Simulates the passage of time in a fakeAsync test.
+3. Handles async operations automatically.
+4. Verifies test results.
+Answer: 2. Simulates the passage of time in a fakeAsync test.
+
+Q28: How do you test a service with HTTP dependencies in Angular?
+1. By using HttpTestingController to mock HTTP requests.
+2. By directly calling the service’s methods.
+3. By using fakeAsync and tick().
+4. By using spyOn().
+Answer: 1. By using HttpTestingController to mock HTTP requests.
+
+Q29: How do you trigger an event in a unit test?
+1. Using fixture.detectChanges().
+2. Using debugElement.triggerEventHandler().
+3. Using TestBed.overrideComponent().
+4. Using inject().
+Answer: 2. Using debugElement.triggerEventHandler().
+
+Q30: What is the main benefit of unit testing in Angular?
+1. To improve runtime performance.
+2. To ensure individual units of code work as expected.
+3. To reduce application bundle size.
+4. To simplify routing.
+Answer: 2. To ensure individual units of code work as expected.
+
+Q1: What is the purpose of TestBed.createComponent() in Angular tests?
+1. To mock HTTP requests.
+2. To create an instance of the component and its template for testing.
+3. To handle dependency injection in tests.
+4. To configure routing for the application.
+Answer: 2. To create an instance of the component and its template for testing.
+
+Q2: How do you access the DOM representation of a component in a test?
+1. Using TestBed.configureTestingModule().
+2. Using fixture.debugElement.
+3. Using TestBed.inject().
+4. Using TestBed.overrideComponent().
+Answer: 2. Using fixture.debugElement.
+
+Q3: Which method triggers Angular’s change detection in a test?
+1. detectChanges()
+2. initialize()
+3. createComponent()
+4. compileComponents()
+Answer: 1. detectChanges()
+
+Q4: How do you test the @Input properties of a component?
+1. By binding values in the template.
+2. By setting the property directly in the component instance.
+3. By using spyOn().
+4. By overriding the component.
+Answer: 2. By setting the property directly in the component instance.
+
+Q5: How do you verify that an @Output event is emitted?
+1. By using fixture.debugElement.
+2. By subscribing to the EventEmitter and checking the emitted value.
+3. By triggering detectChanges().
+4. By overriding the event handler.
+Answer: 2. By subscribing to the EventEmitter and checking the emitted value.
+
+Q6: What does the NO_ERRORS_SCHEMA do in Angular tests?
+1. Ignores unrecognized elements and attributes in templates.
+2. Mocks services in the test module.
+3. Detects errors in the component lifecycle.
+4. Prevents the need for TestBed configuration.
+Answer: 1. Ignores unrecognized elements and attributes in templates.
+
+Q7: How do you test asynchronous operations in a component?
+1. By using fakeAsync and tick().
+2. By using toBe().
+3. By overriding the component provider.
+4. By using TestBed.overrideTemplate().
+Answer: 1. By using fakeAsync and tick().
+
+Q8: What does the fixture.nativeElement property provide?
+1. Access to Angular’s internal debug utilities.
+2. Access to the root DOM element of the component.
+3. Access to the component’s dependencies.
+4. Access to the TestBed configuration.
+Answer: 2. Access to the root DOM element of the component.
+
+Q9: How do you test a DOM event like a button click in a component?
+1. By directly calling the component’s event handler.
+2. By using fixture.debugElement.triggerEventHandler().
+3. By modifying the component’s state directly.
+4. By using toEqual().
+Answer: 2. By using fixture.debugElement.triggerEventHandler().
+
+Q10: How do you verify that a component’s template updates correctly?
+1. By using TestBed.overrideComponent().
+2. By checking the DOM after calling fixture.detectChanges().
+3. By injecting the component into another test.
+4. By overriding the component’s providers.
+Answer: 2. By checking the DOM after calling fixture.detectChanges().
+
+Q11: Which function is used to locate elements in the component’s DOM?
+1. fixture.debugElement.query()
+2. fixture.detectChanges()
+3. TestBed.configureTestingModule()
+4. TestBed.overrideTemplate()
+Answer: 1. fixture.debugElement.query()
+
+Q12: How do you handle a child component in a test if its behavior is irrelevant?
+1. Use NO_ERRORS_SCHEMA to ignore it.
+2. Mock the child component’s behavior.
+3. Remove the child component from the template.
+4. Use spyOn() on the child component.
+Answer: 1. Use NO_ERRORS_SCHEMA to ignore it.
+
+Q13: What is the purpose of async in Angular tests?
+1. To mock HTTP requests.
+2. To handle asynchronous operations in a test.
+3. To configure dependency injection in tests.
+4. To mock the component’s lifecycle hooks.
+Answer: 2. To handle asynchronous operations in a test.
+
+Q14: How do you mock a service in a component test?
+1. By providing a mock implementation in the TestBed.configureTestingModule().
+2. By using the fixture.debugElement.
+3. By using NO_ERRORS_SCHEMA.
+4. By overriding the component’s template.
+Answer: 1. By providing a mock implementation in the TestBed.configureTestingModule().
+
+Q15: How do you test an Angular structural directive like *ngIf?
+1. By checking the DOM for added or removed elements.
+2. By using TestBed.overrideComponent().
+3. By using spyOn().
+4. By testing the service that provides the data.
+Answer: 1. By checking the DOM for added or removed elements.
+
+Q16: How do you verify that a method in a component was called?
+1. By using spyOn().
+2. By calling the method directly.
+3. By overriding the method.
+4. By using TestBed.overrideTemplate().
+Answer: 1. By using spyOn().
+
+Q17: How do you ensure a test for a component with asynchronous data completes?
+1. By using fakeAsync and tick().
+2. By using NO_ERRORS_SCHEMA.
+3. By mocking the component’s template.
+4. By calling detectChanges() multiple times.
+Answer: 1. By using fakeAsync and tick().
+
+Q18: What is the purpose of TestBed.overrideTemplate()?
+1. To replace the component’s template for testing.
+2. To mock the component’s dependencies.
+3. To initialize the testing module.
+4. To override the component’s lifecycle hooks.
+Answer: 1. To replace the component’s template for testing.
+
+Q19: How do you handle nested Observables in a component test?
+1. By using mergeMap.
+2. By using switchMap.
+3. By mocking the Observables.
+4. By flattening them with RxJS operators in the component logic.
+Answer: 3. By mocking the Observables.
+
+Q20: How do you test if a button click changes a component’s state?
+1. By calling the state-changing method directly.
+2. By simulating a click event and verifying the updated state.
+3. By overriding the component’s template.
+4. By mocking the button element.
+Answer: 2. By simulating a click event and verifying the updated state.
+
+Q21: How do you test a component’s dependency on a service?
+1. By injecting the real service into the test.
+2. By mocking the service and verifying interactions.
+3. By using NO_ERRORS_SCHEMA.
+4. By overriding the service globally.
+Answer: 2. By mocking the service and verifying interactions.
+
+Q22: Which lifecycle hook is most commonly tested in Angular components?
+1. ngOnInit
+2. ngAfterViewInit
+3. ngDoCheck
+4. ngOnDestroy
+Answer: 1. ngOnInit
+
+Q23: How do you ensure that a component’s DOM is updated in a test?
+1. By using fixture.detectChanges().
+2. By calling TestBed.compileComponents().
+3. By overriding the component’s template.
+4. By reinitializing the test module.
+Answer: 1. By using fixture.detectChanges().
+
+Q24: What does fixture.whenStable() do in Angular tests?
+1. Waits for all asynchronous tasks to complete before continuing.
+2. Detects changes in the component’s template.
+3. Verifies the stability of the component’s state.
+4. Mocks HTTP requests in the test.
+Answer: 1. Waits for all asynchronous tasks to complete before continuing.
+
+Q25: How do you simulate a form input event in a component test?
+1. By setting the input value programmatically and triggering an input event.
+2. By overriding the form’s template.
+3. By mocking the form’s control.
+4. By using NO_ERRORS_SCHEMA.
+Answer: 1. By setting the input value programmatically and triggering an input event.
+
+Q26: How do you check if a child component was rendered in the DOM?
+1. By using fixture.debugElement.query().
+2. By mocking the child component.
+3. By overriding the child component’s template.
+4. By checking the service that provides data.
+Answer: 1. By using fixture.debugElement.query().
+
+Q27: How do you trigger a change detection cycle in a component?
+1. By calling fixture.detectChanges().
+2. By initializing the component again.
+3. By reloading the test module.
+4. By using spyOn().
+Answer: 1. By calling fixture.detectChanges().
+
+Q28: What is the purpose of fixture.autoDetectChanges()?
+1. Automatically triggers change detection after each test action.
+2. Automatically mocks the component’s dependencies.
+3. Prevents errors in the test module.
+4. Configures routing for the test environment.
+Answer: 1. Automatically triggers change detection after each test action.
+
+Q29: How do you test a custom Angular attribute directive?
+1. By applying the directive to an element and verifying its effect on the DOM.
+2. By overriding the directive’s template.
+3. By using spyOn().
+4. By checking the service that provides data.
+Answer: 1. By applying the directive to an element and verifying its effect on the DOM.
+
+Q30: How do you check the value of a component’s bound property in a test?
+1. By using fixture.componentInstance to access the property.
+2. By overriding the component’s template.
+3. By using spyOn() on the property.
+4. By injecting the property as a service.
+Answer: 1. By using fixture.componentInstance to access the property.
+
+Q1: What command is used to build an Angular app for production?
+1. ng serve --prod
+2. ng build --prod
+3. ng deploy
+4. ng build --dev
+Answer: 2. ng build --prod
+
+Q2: What is the purpose of AOT compilation in Angular?
+1. To enable lazy loading.
+2. To compile TypeScript code at runtime.
+3. To precompile HTML and TypeScript into JavaScript during the build process.
+4. To debug applications in production.
+Answer: 3. To precompile HTML and TypeScript into JavaScript during the build process.
+
+Q3: What does tree shaking do in Angular?
+1. Removes duplicate code from the application bundle.
+2. Minimizes CSS files.
+3. Removes unused code from the final bundle.
+4. Converts JavaScript to TypeScript.
+Answer: 3. Removes unused code from the final bundle.
+
+Q4: How do you enable service workers in an Angular app?
+1. By importing the ServiceWorkerModule manually.
+2. By running ng add @angular/pwa.
+3. By adding a serviceWorker.ts file to the project.
+4. By configuring the router for lazy loading.
+Answer: 2. By running ng add @angular/pwa.
+
+Q5: What is the benefit of lazy loading in Angular?
+1. Speeds up the initial load time of the application.
+2. Prevents XSS attacks.
+3. Automatically optimizes the bundle size.
+4. Improves server-side rendering performance.
+Answer: 1. Speeds up the initial load time of the application.
+
+Q6: Where should static assets like images be placed in an Angular project?
+1. In the src folder.
+2. In the assets folder.
+3. In the environment folder.
+4. In the app folder.
+Answer: 2. In the assets folder.
+
+Q7: What is the purpose of the environment.ts file in Angular?
+1. To define the structure of the app.
+2. To store environment-specific configurations.
+3. To handle error logging.
+4. To manage static assets.
+Answer: 2. To store environment-specific configurations.
+
+Q8: Which Angular feature ensures unused code is removed from the production build?
+1. AOT Compilation
+2. Lazy Loading
+3. Tree Shaking
+4. Service Workers
+Answer: 3. Tree Shaking
+
+Q9: How do you reference a static asset in Angular templates?
+1. By using src="assets/<filename>".
+2. By using src="app/<filename>".
+3. By importing it in environment.ts.
+4. By adding it to the angular.json file.
+Answer: 1. By using src="assets/<filename>".
+
+Q10: What is Angular Universal used for?
+1. To serve assets from a CDN.
+2. To enable server-side rendering.
+3. To integrate Angular with a backend framework.
+4. To optimize the application bundle size.
+Answer: 2. To enable server-side rendering.
+
+Q11: How do you set up error logging for an Angular production app?
+1. By using Angular’s built-in logging service.
+2. By integrating third-party tools like Sentry or LogRocket.
+3. By enabling debug mode in production.
+4. By adding a logger to environment.ts.
+Answer: 2. By integrating third-party tools like Sentry or LogRocket.
+
+Q12: What is the purpose of the --prod flag in the Angular CLI build command?
+1. Enables debugging tools.
+2. Compiles the app in development mode.
+3. Enables optimizations like AOT, tree shaking, and minification.
+4. Automatically sets up service workers.
+Answer: 3. Enables optimizations like AOT, tree shaking, and minification.
+
+Q13: Which tool is commonly used for monitoring Angular production errors?
+1. Webpack
+2. Karma
+3. Sentry
+4. Jasmine
+Answer: 3. Sentry
+
+Q14: What is a common best practice for securing Angular apps?
+1. Use innerHTML for all dynamic content.
+2. Disable XSS protection.
+3. Use Angular’s built-in sanitation methods.
+4. Avoid using Angular Universal.
+Answer: 3. Use Angular’s built-in sanitation methods.
+
+Q15: How can you improve the SEO of an Angular app?
+1. By using Angular Material.
+2. By enabling AOT compilation.
+3. By implementing server-side rendering (SSR) with Angular Universal.
+4. By adding static assets to the assets folder.
+Answer: 3. By implementing server-side rendering (SSR) with Angular Universal.
+
+Q16: What is the role of a Content Security Policy (CSP) in Angular apps?
+1. To reduce the application bundle size.
+2. To prevent unauthorized script execution and enhance security.
+3. To speed up lazy loading.
+4. To improve service worker performance.
+Answer: 2. To prevent unauthorized script execution and enhance security.
+
+Q17: What is the default build system used by Angular CLI?
+1. Rollup
+2. Parcel
+3. Webpack
+4. Gulp
+Answer: 3. Webpack
+
+Q18: How do you split code into smaller bundles in Angular?
+1. By using lazy loading and Webpack optimizations.
+2. By using a custom build script.
+3. By adding all dependencies to angular.json.
+4. By disabling AOT compilation.
+Answer: 1. By using lazy loading and Webpack optimizations.
+
+Q19: Which Angular CLI command helps in converting an Angular app into a PWA?
+1. ng serve --pwa
+2. ng generate pwa
+3. ng add @angular/pwa
+4. ng build --pwa
+Answer: 3. ng add @angular/pwa
+
+Q20: How do you prevent memory leaks in Angular apps?
+1. By using takeUntil with Observables.
+2. By disabling lazy loading.
+3. By avoiding dependency injection.
+4. By using inline templates.
+Answer: 1. By using takeUntil with Observables.
+
+Q21: How do you configure HTTP caching in Angular apps?
+1. By using HttpHeaders to set cache-control headers.
+2. By adding caching settings to angular.json.
+3. By enabling caching in environment.ts.
+4. By implementing lazy loading.
+Answer: 1. By using HttpHeaders to set cache-control headers.
+
+Q22: What is the purpose of minification in Angular production builds?
+1. To simplify debugging.
+2. To reduce the application bundle size.
+3. To enable service workers.
+4. To improve source maps.
+Answer: 2. To reduce the application bundle size.
+
+Q23: How do you optimize images for Angular apps?
+1. By placing them in the src folder.
+2. By using optimized formats like WebP and compressing them before deployment.
+3. By adding them to angular.json.
+4. By using HttpHeaders.
+Answer: 2. By using optimized formats like WebP and compressing them before deployment.
+
+Q24: How can you monitor the performance of an Angular app in production?
+1. By enabling the Angular profiler in dev tools.
+2. By integrating performance monitoring tools like Lighthouse.
+3. By running ng serve --prod locally.
+4. By using lazy loading for all routes.
+Answer: 2. By integrating performance monitoring tools like Lighthouse.
+
+Q25: How do you ensure a smooth user experience in slow network conditions?
+1. By using lazy loading and service workers.
+2. By disabling AOT compilation.
+3. By enabling source maps.
+4. By reducing HTTP requests.
+Answer: 1. By using lazy loading and service workers.
+
+Q26: How do you enable offline capabilities in an Angular app?
+1. By using Webpack.
+2. By implementing service workers with ng add @angular/pwa.
+3. By adding static assets to environment.ts.
+4. By enabling lazy loading.
+Answer: 2. By implementing service workers with ng add @angular/pwa.
+
+Q27: Which Angular configuration is used to define base URLs for API calls in different environments?
+1. angular.json
+2. environment.ts
+3. main.ts
+4. styles.css
+Answer: 2. environment.ts
+
+Q28: How do you manage third-party libraries in an Angular app?
+1. By adding them directly to the assets folder.
+2. By installing them via npm and importing them in the code.
+3. By adding them to the environment.ts file.
+4. By placing them in the src folder.
+Answer: 2. By installing them via npm and importing them in the code.
+
+Q29: What is the primary benefit of HTTP caching headers in production?
+1. To reduce server load and improve response time.
+2. To enable lazy loading.
+3. To improve application bundle size.
+4. To speed up AOT compilation.
+Answer: 1. To reduce server load and improve response time.
+
+Q30: How do you handle runtime errors in production?
+1. By enabling Angular debug mode.
+2. By using tools like Sentry for error logging and monitoring.
+3. By building the app without AOT.
+4. By adding the errors to environment.ts.
+Answer: 2. By using tools like Sentry for error logging and monitoring.
+
+Q1: What command is used to generate a module with routing for lazy loading?
+1. ng generate module moduleName --route
+2. ng generate module --lazy
+3. ng new --routing
+4. ng generate lazy 
+Answer: 1. ng generate module moduleName --route
+
+Q2: Which testing function is used to initialize and compile Angular components before each test?
+1. compileModule()
+2. beforeEach()
+3. initializeComponent()
+4. TestModule() 
+Answer: 2. beforeEach()
+
+Q3: What Angular CLI command adds internationalization (i18n) to a project?
+1. ng add i18n
+2. ng generate i18n
+3. ng xi18n
+4. ng translate 
+Answer: 3. ng xi18n
+
+Q4: What file format is used for translation in Angular i18n?
+1. JSON
+2. XML
+3. XLIFF
+4. YAML 
+Answer: 3. XLIFF
+
+Q5: What feature in Angular optimizes template rendering?
+1. ViewEncapsulation
+2. ChangeDetectionStrategy
+3. Zone.js
+4. Tree Shaking 
+Answer: 2. ChangeDetectionStrategy
+
+Q6: How does Angular minimize the size of the final bundle?
+1. Lazy loading
+2. Tree shaking
+3. AOT Compilation
+4. All of the above 
+Answer: 4. All of the above
+
+Q7: Which Angular feature helps prevent Cross-Site Scripting (XSS)?
+1. HttpClient
+2. DomSanitizer
+3. Template Binding
+4. Data Interpolation 
+Answer: 2. DomSanitizer
+
+Q8: What is the purpose of the bypassSecurityTrustHtml() method in Angular?
+1. To sanitize user input.
+2. To trust untrusted HTML and bypass Angular's security model.
+3. To optimize DOM rendering.
+4. To allow the use of unsafe HTML in attributes. 
+Answer: 2. To trust untrusted HTML and bypass Angular's security model.
+
+Q9: Which of the following is a structural directive in Angular?
+1. ngClass
+2. ngStyle
+3. ngIf
+4. ngModel
+Answer: 3. ngIf
+
+Q10: What is the purpose of the ngOnInit lifecycle hook in Angular components?
+1. To handle cleanup just before the component is destroyed
+2. To respond to changes in data-bound input properties
+3. To initialize the component after Angular first displays the data-bound properties
+4. To handle changes in the content projected into the component
+Answer: 3. To initialize the component after Angular first displays the data-bound properties
+
+Q11: Which of the following is true about Angular modules (NgModule)?
+1. Every Angular application has at least one module, the root module.
+2. Modules can import other modules to use their exported components, directives, and pipes.
+3. Modules help organize an application into cohesive blocks of functionality.
+4. All of the above.
+Answer: 4. All of the above.
+
+Q12: Which Angular directive is used to bind a form control to a component property, enabling two-way data binding?
+1. ngBind
+2. ngModel
+3. ngForm
+4. ngControl
+Answer: 2. ngModel
+
+Q13: What is the purpose of the main.ts file in an Angular application?
+It defines all the routes of the application.
+It is the entry point that bootstraps the root module.
+It contains all the components of the application.
+It sets up the Angular CLI.
+Answer: 2. It is the entry point that bootstraps the root module.
+
+Q14: Which of the following is an attribute directive in Angular?
+1. *ngIf
+2. *ngFor
+3. [ngStyle]
+4. @Input
+Answer: 3. [ngStyle]
+
+Q15: How do you create a custom directive in Angular?
+1. Using the @Component decorator
+2. Using the @Directive decorator
+3. Using the @NgModule decorator
+4. Using the @Injectable decorator
+Answer: 2. Using the @Directive decorator
+
+Q16: What is the role of the providers array in Angular modules?
+1. To register directives in the module.
+2. To register services and make them available for dependency injection.
+3. To define components that are part of the module.
+4. To bootstrap the root component.
+Answer: 2. To register services and make them available for dependency injection.
+
+Q17: What is the purpose of ng-content in Angular?
+1. To conditionally render elements.
+2. To allow content projection into a component.
+3. To bind a value to an element’s property.
+4. To create a new Angular directive.
+Answer: 2. To allow content projection into a component.
+
+Q18: What is the purpose of the BrowserAnimationsModule in Angular?
+1. To add support for Angular animations.
+2. To enable lazy loading in Angular modules.
+3. To handle HTTP requests and responses.
+4. To manage form validation in Angular.
+Answer: 1. To add support for Angular animations.
